@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:toters/layth/home.dart';
+import 'package:toters/maryam/screen1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: home_screen(),
+      home: screen1(),
     );
   }
 }
