@@ -12,12 +12,57 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    int index = 0;
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+      home: Scaffold(
+        bottomNavigationBar: NavigationBar(
+          selectedIndex: index,
+          height: 55,
+          backgroundColor: Colors.white,
+          destinations: [
+            NavigationDestination(
+              icon: Icon(Icons.home_filled),
+              label: "Home",
+              selectedIcon: Icon(
+                Icons.home_filled,
+                color: Colors.green,
+              ),
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.search),
+              label: "Search",
+              selectedIcon: Icon(
+                Icons.search,
+                color: Colors.green,
+              ),
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.add_box),
+              label: "Butler",
+              selectedIcon: Icon(
+                Icons.add_box,
+                color: Colors.green,
+              ),
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.list_alt_outlined),
+              label: "Orders",
+              selectedIcon: Icon(
+                Icons.list_alt_outlined,
+                color: Colors.green,
+              ),
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.account_box_outlined),
+              label: "Accounts",
+              selectedIcon: Icon(
+                Icons.account_box_outlined,
+                color: Colors.green,
+              ),
+            )
+          ],
+        ),
       ),
-      home: screen1(),
     );
   }
 }
