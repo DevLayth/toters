@@ -24,39 +24,6 @@ class _MyNavBarState extends State<MyNavBar> {
     setState(() {
       _selectedIndex = index;
     });
-    // Navigate to a new screen when an item is tapped
-    switch (index) {
-      case 0:
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => home_screen()),
-        );
-        break;
-      case 1:
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => Screen3()),
-        );
-        break;
-      case 2:
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => screen2()),
-        );
-        break;
-      case 3:
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => screen1()),
-        );
-        break;
-      case 4:
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => screen1()),
-        );
-        break;
-    }
   }
 
   @override
