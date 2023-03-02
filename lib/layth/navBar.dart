@@ -47,7 +47,7 @@ class _MyNavBarState extends State<MyNavBar> {
                 label: 'Search',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.rice_bowl_outlined),
+                icon: Icon(Icons.label),
                 label: 'Butler',
               ),
               BottomNavigationBarItem(
@@ -60,7 +60,7 @@ class _MyNavBarState extends State<MyNavBar> {
               ),
             ],
             currentIndex: _selectedIndex,
-            iconSize: 30,
+            iconSize: 25,
             unselectedItemColor: Color.fromARGB(129, 0, 0, 0),
             selectedItemColor: Color.fromARGB(255, 62, 180, 137),
             onTap: _onItemTapped,
