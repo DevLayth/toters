@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:toters/aref/screen2.dart';
+import 'package:toters/colors.dart';
 import 'package:toters/layth/home.dart';
 import 'package:toters/maryam/screen1.dart';
 import 'package:toters/sarah9/screen3.dart';
@@ -62,7 +63,7 @@ class _MyNavBarState extends State<MyNavBar> {
             currentIndex: _selectedIndex,
             iconSize: 25,
             unselectedItemColor: Color.fromARGB(129, 0, 0, 0),
-            selectedItemColor: Color.fromARGB(255, 62, 180, 137),
+            selectedItemColor: Tcolor,
             onTap: _onItemTapped,
             selectedFontSize: 12,
             unselectedFontSize: 12,
