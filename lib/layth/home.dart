@@ -136,11 +136,7 @@ class home_screen extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
-                height: 700,
-                width: 350,
-                color: Color.fromARGB(255, 70, 25, 25),
-                child: Offers()),
+            Offers()
           ],
         ),
       ),

@@ -20,8 +20,10 @@ class _OffersState extends State<Offers> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Padding(
+    return Container(
+      height: 250,
+      width: 350,
+      child: Padding(
         padding: const EdgeInsets.all(10),
         child: Container(
           clipBehavior: Clip.antiAliasWithSaveLayer,
