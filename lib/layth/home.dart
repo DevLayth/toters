@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:toters/colors.dart';
+import 'package:toters/layth/catg.dart';
 import 'package:toters/layth/offer_slider.dart';
 import 'package:toters/main.dart';
 
@@ -136,7 +137,16 @@ class home_screen extends StatelessWidget {
                 ],
               ),
             ),
-            Offers()
+            Container(
+                height: 500,
+                width: 400,
+                color: Color.fromARGB(255, 255, 253, 253),
+                child: Column(
+                  children: [
+                    Offers(),
+                    catg(),
+                  ],
+                ))
           ],
         ),
       ),

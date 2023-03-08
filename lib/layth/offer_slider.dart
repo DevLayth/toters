@@ -22,7 +22,7 @@ class _OffersState extends State<Offers> {
   Widget build(BuildContext context) {
     return Container(
       height: 250,
-      width: 350,
+      width: 425,
       child: Padding(
         padding: const EdgeInsets.all(10),
         child: Container(
