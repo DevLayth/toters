@@ -13,9 +13,12 @@ class _OffersState extends State<Offers> {
   int _currentIndex = 0;
 
   final List<String> _imageList = [
-    'assets/offer1.png',
-    'assets/offer2.png',
-    'assets/offer3.png',
+    'assets/offers/offer6.png',
+    'assets/offers/offer2.png',
+    'assets/offers/offer3.png',
+    'assets/offers/offer4.png',
+    'assets/offers/offer1.png',
+    'assets/offers/offer5.png',
   ];
 
   @override
@@ -58,11 +61,11 @@ class _OffersState extends State<Offers> {
                     aspectRatio: 2 / 1,
                     viewportFraction: 1,
                     initialPage: _currentIndex,
-                    enableInfiniteScroll: false,
+                    enableInfiniteScroll: true,
                     enlargeCenterPage: false,
                     disableCenter: true,
                     autoPlay: true,
-                    autoPlayInterval: Duration(seconds: 5),
+                    autoPlayInterval: Duration(seconds: 3),
                     autoPlayAnimationDuration: Duration(milliseconds: 100),
                     autoPlayCurve: Curves.fastOutSlowIn,
                     scrollDirection: Axis.horizontal,
