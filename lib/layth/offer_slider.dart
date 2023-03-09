@@ -19,6 +19,7 @@ class _OffersState extends State<Offers> {
     'assets/offers/offer4.png',
     'assets/offers/offer1.png',
     'assets/offers/offer5.png',
+    'assets/offers/offer7.png',
   ];
 
   @override
