@@ -21,7 +21,7 @@ class _OffersState extends State<Offers> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 250,
+      height: 225,
       width: 425,
       child: Padding(
         padding: const EdgeInsets.all(10),

@@ -10,15 +10,15 @@ class catcard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 110,
-      width: 90,
+      height: 85,
+      width: 70,
       margin: EdgeInsets.all(2),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(10),
         boxShadow: [
           BoxShadow(
-            color: Colors.grey.withOpacity(0.5),
+            color: Colors.grey.withOpacity(0.3),
             spreadRadius: 2,
             blurRadius: 5,
             offset: Offset(0, 3),
@@ -28,14 +28,16 @@ class catcard extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          Container(
-            color: Colors.amber,
-            height: 50,
-            width: 50,
+          Image.asset(
+            img,
+            height: 40,
+            width: 40,
           ),
           Text(
             title,
-            style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            style: TextStyle(
+              fontSize: 12,
+            ),
           ),
         ],
       ),
