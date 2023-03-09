@@ -57,20 +57,20 @@ class GreenPts extends StatelessWidget {
                       child: Text(
                         "0",
                         style: TextStyle(
-                            fontSize: 35, fontWeight: FontWeight.w800),
+                            fontSize: 30, fontWeight: FontWeight.w800),
                       ),
                     ),
                     Positioned(
-                      left: 25,
-                      top: 10,
+                      left: 20,
+                      top: 5,
                       child: Text(
                         "Pts",
                         style: TextStyle(fontSize: 15, color: Colors.black54),
                       ),
                     ),
                     Positioned(
-                        left: 21,
-                        bottom: 10,
+                        left: 17,
+                        bottom: 15,
                         child: Icon(
                           Icons.arrow_right_alt,
                           size: 30,
