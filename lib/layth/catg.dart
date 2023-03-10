@@ -16,7 +16,7 @@ class catg extends StatelessWidget {
               catcard(
                 img: "assets/catag/breakfast.png",
                 title: "Breakfast",
-                i: 1,
+                i: 0,
               ),
               catcard(
                 img: "assets/catag/drinks.png",
@@ -26,12 +26,12 @@ class catg extends StatelessWidget {
               catcard(
                 img: "assets/catag/food.png",
                 title: "Food",
-                i: 1,
+                i: 2,
               ),
               catcard(
                 img: "assets/catag/butler.png",
                 title: "Butler",
-                i: 1,
+                i: 3,
               ),
             ],
           ),
@@ -44,22 +44,22 @@ class catg extends StatelessWidget {
               catcard(
                 img: "assets/catag/new.png",
                 title: "New",
-                i: 2,
+                i: 4,
               ),
               catcard(
                 img: "assets/catag/market.png",
                 title: "Market",
-                i: 2,
+                i: 5,
               ),
               catcard(
                 img: "assets/catag/rewards.png",
                 title: "Rewards",
-                i: 2,
+                i: 6,
               ),
               catcard(
                 img: "assets/catag/zaincash.jpg",
                 title: "Add Fun...",
-                i: 2,
+                i: 7,
               )
             ],
           ),
