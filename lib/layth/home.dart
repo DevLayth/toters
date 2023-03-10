@@ -68,10 +68,10 @@ class home_screen extends StatelessWidget {
                 )),
             Container(
               child: rest_card(
-                name: rest_data[0].name,
-                Type: rest_data[0].Type,
-                dliver: rest_data[0].dliver,
-                img: rest_data[0].img,
+                name: rest_data[1].name,
+                Type: rest_data[1].Type,
+                dliver: rest_data[1].dliver,
+                img: rest_data[1].img,
               ),
             )
           ],

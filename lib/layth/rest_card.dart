@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
@@ -6,15 +8,18 @@ import 'package:toters/layth/rest_data_modul.dart';
 
 class rest_card extends StatelessWidget {
   final String name;
-  final String Type;
-  final String dliver;
-  final String img;
-  const rest_card(
-      {super.key,
-      required this.name,
-      required this.Type,
-      required this.dliver,
-      required this.img});
+  final String? Type;
+  final String? dliver;
+  final String? img;
+  final double? rate;
+  const rest_card({
+    super.key,
+    required this.name,
+    this.Type,
+    this.dliver,
+    this.img,
+    this.rate,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +34,7 @@ class rest_card extends StatelessWidget {
           height: 170,
           width: 300,
           child: Image.asset(
-            img,
+            img!,
             fit: BoxFit.fill,
           ),
           clipBehavior: Clip.antiAlias,
@@ -69,7 +74,7 @@ class rest_card extends StatelessWidget {
             right: 152,
             bottom: 75,
             child: Text(
-              dliver,
+              dliver!,
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
             )),
         Positioned(right: 160, bottom: 60, child: Text("mins")),
@@ -78,7 +83,7 @@ class rest_card extends StatelessWidget {
             child: Text(name,
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18))),
         Positioned(
-            bottom: 10, child: Text(Type, style: TextStyle(fontSize: 15)))
+            bottom: 10, child: Text(Type!, style: TextStyle(fontSize: 15)))
       ],
     );
   }
