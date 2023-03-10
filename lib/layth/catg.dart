@@ -13,10 +13,26 @@ class catg extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              catcard(img: "assets/catag/breakfast.png", title: "Breakfast"),
-              catcard(img: "assets/catag/drinks.png", title: "Drinks"),
-              catcard(img: "assets/catag/food.png", title: "Food"),
-              catcard(img: "assets/catag/butler.png", title: "Butler"),
+              catcard(
+                img: "assets/catag/breakfast.png",
+                title: "Breakfast",
+                i: 1,
+              ),
+              catcard(
+                img: "assets/catag/drinks.png",
+                title: "Drinks",
+                i: 1,
+              ),
+              catcard(
+                img: "assets/catag/food.png",
+                title: "Food",
+                i: 1,
+              ),
+              catcard(
+                img: "assets/catag/butler.png",
+                title: "Butler",
+                i: 1,
+              ),
             ],
           ),
         ),
@@ -25,10 +41,26 @@ class catg extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              catcard(img: "assets/catag/new.png", title: "New"),
-              catcard(img: "assets/catag/market.png", title: "Market"),
-              catcard(img: "assets/catag/rewards.png", title: "Rewards"),
-              catcard(img: "assets/catag/zaincash.jpg", title: "Add Fun..."),
+              catcard(
+                img: "assets/catag/new.png",
+                title: "New",
+                i: 2,
+              ),
+              catcard(
+                img: "assets/catag/market.png",
+                title: "Market",
+                i: 2,
+              ),
+              catcard(
+                img: "assets/catag/rewards.png",
+                title: "Rewards",
+                i: 2,
+              ),
+              catcard(
+                img: "assets/catag/zaincash.jpg",
+                title: "Add Fun...",
+                i: 2,
+              )
             ],
           ),
         ),
