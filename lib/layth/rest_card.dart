@@ -1,10 +1,5 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:toters/colors.dart';
-import 'package:toters/layth/rest_data_modul.dart';
 
 class rest_card extends StatelessWidget {
   final String name;

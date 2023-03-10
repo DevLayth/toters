@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toters/aref/screen2.dart';
-import 'package:toters/layth/home.dart';
 import 'package:toters/layth/navBar.dart';
-import 'package:toters/maryam/screen1.dart';
-import 'package:toters/sarah9/screen3.dart';
 
 void main() {
   runApp(const MyApp());

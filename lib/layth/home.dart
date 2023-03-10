@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:toters/colors.dart';
 import 'package:toters/layth/catg.dart';
 import 'package:toters/layth/green_pts_card.dart';
 import 'package:toters/layth/offer_slider.dart';
 import 'package:toters/layth/rest_card.dart';
 import 'package:toters/layth/rest_data_modul.dart';
-import 'package:toters/main.dart';
 
 class home_screen extends StatelessWidget {
   const home_screen({super.key});
