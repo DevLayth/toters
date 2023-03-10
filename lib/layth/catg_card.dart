@@ -30,8 +30,8 @@ class catcard extends StatelessWidget {
         children: [
           Image.asset(
             img,
-            height: 40,
-            width: 40,
+            height: 50,
+            width: 50,
           ),
           Text(
             title,
