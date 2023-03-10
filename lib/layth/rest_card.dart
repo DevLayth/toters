@@ -18,6 +18,11 @@ class rest_card extends StatelessWidget {
         Container(
           height: 170,
           width: 300,
+          child: Image.asset(
+            "assets/rest/texas.png",
+            fit: BoxFit.fill,
+          ),
+          clipBehavior: Clip.antiAlias,
           decoration: BoxDecoration(
               color: Tcolor, borderRadius: BorderRadius.circular(10)),
         ),
