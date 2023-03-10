@@ -2,9 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:toters/colors.dart';
+import 'package:toters/layth/rest_data_modul.dart';
 
 class rest_card extends StatelessWidget {
-  const rest_card({super.key});
+  final String name;
+  final String Type;
+  final String dliver;
+  final String img;
+  const rest_card(
+      {super.key,
+      required this.name,
+      required this.Type,
+      required this.dliver,
+      required this.img});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +29,7 @@ class rest_card extends StatelessWidget {
           height: 170,
           width: 300,
           child: Image.asset(
-            "assets/rest/texas.png",
+            img,
             fit: BoxFit.fill,
           ),
           clipBehavior: Clip.antiAlias,
@@ -59,18 +69,16 @@ class rest_card extends StatelessWidget {
             right: 152,
             bottom: 75,
             child: Text(
-              "18-28",
+              dliver,
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
             )),
         Positioned(right: 160, bottom: 60, child: Text("mins")),
         Positioned(
             bottom: 30,
-            child: Text("Texas Cicken - Duhok",
+            child: Text(name,
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18))),
         Positioned(
-            bottom: 10,
-            child: Text("\$\$\$ . Fast Food, Chicken",
-                style: TextStyle(fontSize: 15)))
+            bottom: 10, child: Text(Type, style: TextStyle(fontSize: 15)))
       ],
     );
   }
