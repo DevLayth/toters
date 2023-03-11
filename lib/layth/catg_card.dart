@@ -15,8 +15,8 @@ class catcard extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         if (i == 0) {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (context) => screen1()));
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => Drinks_screen()));
         } else if (i == 1) {
           Navigator.push(context,
               MaterialPageRoute(builder: (context) => Drinks_screen()));
