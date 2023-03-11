@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:toters/aref/screen2.dart';
 import 'package:toters/colors.dart';
 import 'package:toters/layth/home_screen.dart';
-import 'package:toters/maryam/screen1.dart';
+import 'package:toters/maryam/account_screen.dart';
 import 'package:toters/sarah9/screen3.dart';
 
 class MyNavBar extends StatefulWidget {

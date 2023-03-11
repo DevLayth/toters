@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:toters/aref/screen2.dart';
 import 'package:toters/layth/drinks_screen.dart';
-import 'package:toters/maryam/screen1.dart';
+import 'package:toters/maryam/account_screen.dart';
 
 class catcard extends StatelessWidget {
   final String img;

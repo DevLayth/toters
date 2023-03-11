@@ -3,7 +3,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:toters/layth/rest_card.dart';
 import 'package:toters/layth/rest_data_modul.dart';
-import 'package:toters/maryam/screen1.dart';
+import 'package:toters/maryam/account_screen.dart';
 
 class Drinks_screen extends StatelessWidget {
   const Drinks_screen({super.key});
