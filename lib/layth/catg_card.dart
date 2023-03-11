@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:toters/aref/screen2.dart';
+import 'package:toters/layth/drinks_screen.dart';
 import 'package:toters/maryam/screen1.dart';
 
 class catcard extends StatelessWidget {
@@ -15,12 +16,11 @@ class catcard extends StatelessWidget {
       onTap: () {
         if (i == 0) {
           Navigator.push(
-              context, MaterialPageRoute(builder: (context) => screen2()));
-        }
-        /* else if (i == 1) {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (context) => screen2()));
-        } else if (i == 2) {
+              context, MaterialPageRoute(builder: (context) => screen1()));
+        } else if (i == 1) {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => Drinks_screen()));
+        } /*  else if (i == 2) {
           Navigator.push(
               context, MaterialPageRoute(builder: (context) => screen2()));
         } else if (i == 3) {
