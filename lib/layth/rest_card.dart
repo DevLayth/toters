@@ -3,18 +3,19 @@ import 'package:toters/colors.dart';
 
 class rest_card extends StatelessWidget {
   final String name;
-  final String? Type;
+  final String? type;
+  final String? desc;
   final String? dliver;
   final String? img;
   final double? rate;
-  const rest_card({
-    super.key,
-    required this.name,
-    this.Type,
-    this.dliver,
-    this.img,
-    this.rate,
-  });
+  const rest_card(
+      {super.key,
+      required this.name,
+      this.desc,
+      this.dliver,
+      this.img,
+      this.rate,
+      this.type});
 
   @override
   Widget build(BuildContext context) {
@@ -78,7 +79,7 @@ class rest_card extends StatelessWidget {
             child: Text(name,
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18))),
         Positioned(
-            bottom: 10, child: Text(Type!, style: TextStyle(fontSize: 15)))
+            bottom: 10, child: Text(desc!, style: TextStyle(fontSize: 15)))
       ],
     );
   }
