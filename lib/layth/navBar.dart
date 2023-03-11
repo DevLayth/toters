@@ -3,6 +3,7 @@ import 'package:toters/aref/screen2.dart';
 import 'package:toters/colors.dart';
 import 'package:toters/layth/home_screen.dart';
 import 'package:toters/maryam/account_screen.dart';
+import 'package:toters/maryam/order_screen.dart';
 import 'package:toters/sarah9/screen3.dart';
 
 class MyNavBar extends StatefulWidget {
@@ -17,8 +18,8 @@ class _MyNavBarState extends State<MyNavBar> {
     home_screen(),
     Screen3(),
     screen2(),
-    screen1(),
-    screen1(),
+    order_screen(),
+    acoount_screen(),
   ];
 
   void _onItemTapped(int index) {
