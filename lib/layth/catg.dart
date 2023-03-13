@@ -14,11 +14,6 @@ class catg extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               catcard(
-                img: "assets/catag/breakfast.png",
-                title: "Breakfast",
-                i: 0,
-              ),
-              catcard(
                 img: "assets/catag/drinks.png",
                 title: "Drinks",
                 i: 1,

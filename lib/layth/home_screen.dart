@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:toters/layth/catg.dart';
+import 'package:toters/layth/catg_grid.dart';
 import 'package:toters/layth/green_pts_card.dart';
 import 'package:toters/layth/offer_slider.dart';
 import 'package:toters/layth/rest_card.dart';
@@ -53,14 +54,11 @@ class home_screen extends StatelessWidget {
           children: [
             GreenPts(),
             Container(
-                height: 430,
+                height: 450,
                 width: 450,
                 color: Colors.white,
                 child: Column(
-                  children: [
-                    Offers(),
-                    catg(),
-                  ],
+                  children: [Offers(), catg_grid()],
                 )),
           ],
         ),
