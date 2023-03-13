@@ -17,7 +17,7 @@ class _MyNavBarState extends State<MyNavBar> {
   static List<Widget> _widgetOptions = <Widget>[
     home_screen(),
     Screen3(),
-    screen2(),
+    Foodpage(),
     order_screen(),
     acoount_screen(),
   ];
