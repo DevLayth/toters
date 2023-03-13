@@ -1,21 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:toters/colors.dart';
+import 'package:toters/layth/rest_data.dart';
 
 class rest_card extends StatelessWidget {
+  final String img;
   final String name;
-  final String? type;
-  final String? desc;
-  final String? dliver;
-  final String? img;
-  final double? rate;
+  final String desc;
+  final String diliver;
   const rest_card(
       {super.key,
+      required this.img,
       required this.name,
-      this.desc,
-      this.dliver,
-      this.img,
-      this.rate,
-      this.type});
+      required this.desc,
+      required this.diliver});
 
   @override
   Widget build(BuildContext context) {
@@ -27,10 +24,10 @@ class rest_card extends StatelessWidget {
           color: Colors.white,
         ),
         Container(
-          height: 170,
-          width: 300,
+          height: 180,
+          width: 370,
           child: Image.asset(
-            img!,
+            img,
             fit: BoxFit.fill,
           ),
           clipBehavior: Clip.antiAlias,
@@ -38,7 +35,7 @@ class rest_card extends StatelessWidget {
               color: Tcolor, borderRadius: BorderRadius.circular(10)),
         ),
         Positioned(
-          right: 120,
+          right: 10,
           top: 10,
           child: Icon(
             Icons.favorite_border_outlined,
@@ -47,8 +44,8 @@ class rest_card extends StatelessWidget {
           ),
         ),
         Positioned(
-          bottom: 50,
-          right: 130,
+          bottom: 30,
+          right: 15,
           child: Container(
             width: 90,
             height: 50,
@@ -67,19 +64,18 @@ class rest_card extends StatelessWidget {
           ),
         ),
         Positioned(
-            right: 152,
-            bottom: 75,
+            right: 35,
+            bottom: 55,
             child: Text(
-              dliver!,
+              diliver,
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
             )),
-        Positioned(right: 160, bottom: 60, child: Text("mins")),
+        Positioned(right: 42, bottom: 40, child: Text("mins")),
         Positioned(
-            bottom: 30,
+            bottom: 20,
             child: Text(name,
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18))),
-        Positioned(
-            bottom: 10, child: Text(desc!, style: TextStyle(fontSize: 15)))
+        Positioned(bottom: 0, child: Text(desc, style: TextStyle(fontSize: 15)))
       ],
     );
   }

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:toters/layth/catg.dart';
+import 'package:toters/layth/catg_grid.dart';
 import 'package:toters/layth/green_pts_card.dart';
+import 'package:toters/layth/near_free_list.dart';
 import 'package:toters/layth/offer_slider.dart';
 import 'package:toters/layth/rest_card.dart';
-import 'package:toters/layth/rest_data_modul.dart';
+import 'package:toters/layth/rest_data.dart';
+import 'package:toters/layth/top_picks_list.dart';
 
 class home_screen extends StatelessWidget {
   const home_screen({super.key});
@@ -38,13 +40,15 @@ class home_screen extends StatelessWidget {
                   top: 60,
                   left: 10,
                   child: Text(
-                    "Layth",
+                    "KRO",
                     style: TextStyle(
                         color: Colors.black,
                         fontSize: 15,
                         fontWeight: FontWeight.w700),
                   ),
                 ),
+                Positioned(
+                    top: 56, left: 35, child: Icon(Icons.arrow_drop_down))
               ],
             ),
           ),
@@ -53,22 +57,19 @@ class home_screen extends StatelessWidget {
           children: [
             GreenPts(),
             Container(
-                height: 430,
+                height: 425,
                 width: 450,
                 color: Colors.white,
                 child: Column(
                   children: [
                     Offers(),
-                    catg(),
+                    catg_grid(),
                   ],
                 )),
+            top_picks(),
+            near_free(),
             Container(
-              child: rest_card(
-                name: rest_data[1].name,
-                desc: rest_data[1].desc,
-                dliver: rest_data[1].dliver,
-                img: rest_data[1].img,
-              ),
+              height: 20,
             )
           ],
         ),
