@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:toters/layth/catg.dart';
 import 'package:toters/layth/catg_grid.dart';
 import 'package:toters/layth/green_pts_card.dart';
 import 'package:toters/layth/offer_slider.dart';

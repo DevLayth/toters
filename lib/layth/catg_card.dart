@@ -9,7 +9,6 @@ class catcard extends StatelessWidget {
   final int i;
   const catcard(
       {super.key, required this.img, required this.title, required this.i});
-
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
