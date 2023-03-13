@@ -5,8 +5,8 @@ import 'package:toters/colors.dart';
 import 'package:toters/layth/rest_card.dart';
 import 'package:toters/layth/rest_data.dart';
 
-class top_picks extends StatelessWidget {
-  const top_picks({super.key});
+class near_free extends StatelessWidget {
+  const near_free({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class top_picks extends StatelessWidget {
             Positioned(
               left: 10,
               child: Text(
-                "Top Picks, Just For You",
+                "Near & Free",
                 style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
               ),
             ),
@@ -30,15 +30,15 @@ class top_picks extends StatelessWidget {
               child: Container(
                 width: 320,
                 child: Text(
-                    "Having trouble deciding what to eat? Check out the selection or restaurants we picked for you!"),
+                    "Unlock Free delivery from an exclusive list of stores near you"),
               ),
             ),
             Positioned(
-              left: 275,
+              left: 150,
               top: 4,
               child: Icon(
-                Icons.star,
-                color: Colors.amber,
+                Icons.bike_scooter,
+                color: Colors.red,
               ),
             ),
             Positioned(

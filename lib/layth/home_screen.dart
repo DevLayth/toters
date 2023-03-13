@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:toters/layth/catg_grid.dart';
 import 'package:toters/layth/green_pts_card.dart';
+import 'package:toters/layth/near_free_list.dart';
 import 'package:toters/layth/offer_slider.dart';
 import 'package:toters/layth/rest_card.dart';
 import 'package:toters/layth/rest_data.dart';
@@ -66,22 +67,10 @@ class home_screen extends StatelessWidget {
                   ],
                 )),
             top_picks(),
+            near_free()
           ],
         ),
       ),
     );
   }
 }
-/*
-
-Padding(
-              padding: const EdgeInsets.only(right: 80, left: 20),
-              child: rest_card(
-                  img: "assets/rest/texas.png",
-                  name: "texas",
-                  desc: "food",
-                  diliver: "15-30"),
-            ),
-
-
- */
