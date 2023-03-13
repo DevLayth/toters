@@ -13,7 +13,7 @@ class top_picks extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(top: 20),
       child: Container(
-        height: 340,
+        height: 320,
         color: Colors.white,
         child: Stack(
           children: [

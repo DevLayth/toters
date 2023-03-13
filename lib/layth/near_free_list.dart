@@ -11,7 +11,7 @@ class near_free extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 20),
+      padding: const EdgeInsets.only(top: 0),
       child: Container(
         height: 340,
         color: Colors.white,
