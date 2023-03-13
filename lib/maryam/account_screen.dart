@@ -22,7 +22,10 @@ class acoount_screen extends StatelessWidget {
           body: ListView(
             children: [
               green_pts_card(),
-              acc_card(),
+              acc_card(
+                text: "profile",
+                icon: Icons.manage_accounts_outlined,
+              ),
             ],
           )),
     );

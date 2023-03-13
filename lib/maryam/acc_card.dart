@@ -2,26 +2,31 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:toters/colors.dart';
 
 class acc_card extends StatelessWidget {
-  const acc_card({super.key});
+  final String text;
+  final icon;
+  const acc_card({super.key, required this.text, required this.icon});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
+      height: 70,
+      width: 70,
       child: Stack(
         children: [
-          Container(
-            height: 100,
-            width: 100,
-            color: Colors.black12,
+          Positioned(
+            left: 15,
             child: Container(
-              height: 55,
-               child: Icon(Icons.manage_accounts),),
-          )
+              height: 40,
+              width: 40,
+              color: Colors.black45,
+              child: Icon(icon),
+            ),
+          ),
+          Positioned(left: 15, bottom: 0, child: Text(text)),
         ],
-        
       ),
     );
   }
