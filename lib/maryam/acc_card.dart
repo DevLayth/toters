@@ -12,20 +12,32 @@ class acc_card extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 70,
-      width: 70,
+      height: 85,
+      width: 65,
       child: Stack(
         children: [
           Positioned(
-            left: 15,
             child: Container(
-              height: 40,
-              width: 40,
-              color: Colors.black45,
-              child: Icon(icon),
+              height: 60,
+              width: 60,
+              decoration: BoxDecoration(
+                  color: Color.fromARGB(115, 214, 212, 212),
+                  borderRadius: BorderRadius.circular(15)),
+              child: Icon(
+                icon,
+                size: 30,
+                color: Colors.black45,
+              ),
             ),
           ),
-          Positioned(left: 15, bottom: 0, child: Text(text)),
+          Positioned(
+              right: 0,
+              left: 2,
+              bottom: 0,
+              child: Text(
+                text,
+                style: TextStyle(fontWeight: FontWeight.bold),
+              )),
         ],
       ),
     );
