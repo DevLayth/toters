@@ -4,6 +4,7 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:toters/maryam/acc_card.dart';
 
 class acc_list1 extends StatelessWidget {
+  
   const acc_list1({super.key});
 
   @override
