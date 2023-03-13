@@ -1,6 +1,9 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:toters/aref/restaurant_info.dart';
+import 'package:toters/layth/catg_card.dart';
 
 class Foodpage extends StatefulWidget {
   const Foodpage({super.key});
@@ -43,7 +46,10 @@ class _FoodpageState extends State<Foodpage> {
                 backgroundColor: Colors.white,
               ),
             ],
-          )
+          ),
+          SliverToBoxAdapter(
+            child: RestaurantInfo(),
+          ),
         ],
       ),
     );
