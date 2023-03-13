@@ -38,13 +38,15 @@ class home_screen extends StatelessWidget {
                   top: 60,
                   left: 10,
                   child: Text(
-                    "Layth",
+                    "KRO",
                     style: TextStyle(
                         color: Colors.black,
                         fontSize: 15,
                         fontWeight: FontWeight.w700),
                   ),
                 ),
+                Positioned(
+                    top: 56, left: 35, child: Icon(Icons.arrow_drop_down))
               ],
             ),
           ),
@@ -53,12 +55,23 @@ class home_screen extends StatelessWidget {
           children: [
             GreenPts(),
             Container(
-                height: 450,
+                height: 425,
                 width: 450,
                 color: Colors.white,
                 child: Column(
-                  children: [Offers(), catg_grid()],
+                  children: [
+                    Offers(),
+                    catg_grid(),
+                  ],
                 )),
+            Padding(
+              padding: const EdgeInsets.only(right: 80, left: 20),
+              child: rest_card(
+                  img: "assets/rest/texas.png",
+                  name: "texas",
+                  desc: "food",
+                  diliver: "15-30"),
+            ),
           ],
         ),
       ),
