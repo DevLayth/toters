@@ -1,21 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:toters/colors.dart';
+import 'package:toters/layth/rest_data.dart';
 
 class rest_card extends StatelessWidget {
+  final String img;
   final String name;
-  final String? type;
-  final String? desc;
-  final String? dliver;
-  final String? img;
-  final double? rate;
+  final String desc;
+  final String diliver;
   const rest_card(
       {super.key,
+      required this.img,
       required this.name,
-      this.desc,
-      this.dliver,
-      this.img,
-      this.rate,
-      this.type});
+      required this.desc,
+      required this.diliver});
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +27,7 @@ class rest_card extends StatelessWidget {
           height: 170,
           width: 300,
           child: Image.asset(
-            img!,
+            img,
             fit: BoxFit.fill,
           ),
           clipBehavior: Clip.antiAlias,
@@ -70,7 +67,7 @@ class rest_card extends StatelessWidget {
             right: 152,
             bottom: 75,
             child: Text(
-              dliver!,
+              diliver,
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
             )),
         Positioned(right: 160, bottom: 60, child: Text("mins")),
@@ -79,7 +76,7 @@ class rest_card extends StatelessWidget {
             child: Text(name,
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18))),
         Positioned(
-            bottom: 10, child: Text(desc!, style: TextStyle(fontSize: 15)))
+            bottom: 10, child: Text(desc, style: TextStyle(fontSize: 15)))
       ],
     );
   }

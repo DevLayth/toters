@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:toters/layth/rest_card.dart';
-import 'package:toters/layth/rest_data_modul.dart';
+import 'package:toters/layth/rest_data.dart';
 import 'package:toters/maryam/account_screen.dart';
 
 class Drinks_screen extends StatelessWidget {
@@ -26,14 +26,15 @@ class Drinks_screen extends StatelessWidget {
           ),
         ),
         body: ListView.builder(
-            itemCount: rest_data.length,
+            itemCount: r_data.length,
             itemBuilder: (context, index) {
-              if (rest_data[index].rate == 4.7) {
+              if (r_data[index].rate == 4.7) {
                 return rest_card(
-                    name: rest_data[index].name,
-                    desc: rest_data[index].desc,
-                    img: rest_data[index].img,
-                    dliver: rest_data[index].dliver);
+                  img: r_data[index].img!,
+                  name: r_data[index].name!,
+                  diliver: r_data[index].dliver!,
+                  desc: r_data[index].desc!,
+                );
               } else
                 return ListBody();
             }),

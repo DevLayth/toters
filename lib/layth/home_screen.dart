@@ -3,7 +3,7 @@ import 'package:toters/layth/catg.dart';
 import 'package:toters/layth/green_pts_card.dart';
 import 'package:toters/layth/offer_slider.dart';
 import 'package:toters/layth/rest_card.dart';
-import 'package:toters/layth/rest_data_modul.dart';
+import 'package:toters/layth/rest_data.dart';
 
 class home_screen extends StatelessWidget {
   const home_screen({super.key});
@@ -62,14 +62,6 @@ class home_screen extends StatelessWidget {
                     catg(),
                   ],
                 )),
-            Container(
-              child: rest_card(
-                name: rest_data[1].name,
-                desc: rest_data[1].desc,
-                dliver: rest_data[1].dliver,
-                img: rest_data[1].img,
-              ),
-            )
           ],
         ),
       ),
