@@ -67,7 +67,10 @@ class home_screen extends StatelessWidget {
                   ],
                 )),
             top_picks(),
-            near_free()
+            near_free(),
+            Container(
+              height: 20,
+            )
           ],
         ),
       ),
