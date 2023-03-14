@@ -4,13 +4,12 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:toters/maryam/acc_card.dart';
 
 class acc_list1 extends StatelessWidget {
-  
   const acc_list1({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 20, right: 20),
+      padding: const EdgeInsets.only(top: 5, left: 15, right: 15),
       child: Container(
         height: 115,
         decoration: BoxDecoration(

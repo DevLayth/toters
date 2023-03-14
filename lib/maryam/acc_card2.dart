@@ -15,11 +15,11 @@ class acc_card2 extends StatelessWidget {
       child: Stack(
         children: [
           Container(
-            height: 50,
+            height: 36,
             color: Colors.white,
           ),
           Positioned(
-              left: 20,
+              left: 5,
               top: 10,
               child: Icon(
                 icon,
@@ -27,7 +27,7 @@ class acc_card2 extends StatelessWidget {
                 color: Colors.black45,
               )),
           Positioned(
-              left: 65,
+              left: 45,
               top: 15,
               child: Text(
                 text,
