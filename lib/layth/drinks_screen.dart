@@ -39,7 +39,7 @@ class Drinks_screen extends StatelessWidget {
                 child: ListView.builder(
                     itemCount: r_data.length,
                     itemBuilder: (context, index) {
-                      if (r_data[index].rate == 4.7) {
+                      if (r_data[index].type == "Drinks") {
                         return Padding(
                           padding: const EdgeInsets.only(bottom: 10),
                           child: rest_card(
