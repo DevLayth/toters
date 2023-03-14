@@ -3,10 +3,12 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:toters/colors.dart';
 
-class acc_card2 extends StatelessWidget {
+class acc_card3 extends StatelessWidget {
   final String text;
   final icon;
-  const acc_card2({super.key, required this.text, required this.icon});
+  final int num;
+  const acc_card3(
+      {super.key, required this.text, required this.icon, required this.num});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +17,7 @@ class acc_card2 extends StatelessWidget {
       child: Stack(
         children: [
           Container(
-            height: 50,
+            height: 55,
             color: Colors.white,
           ),
           Positioned(
@@ -36,6 +38,14 @@ class acc_card2 extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     color: Colors.black54),
               )),
+          Positioned(
+              right: 20,
+              top: 15,
+              child: Text(
+                "IQD " + num.toString(),
+                style: TextStyle(
+                    fontSize: 15, fontWeight: FontWeight.bold, color: Tcolor),
+              ))
         ],
       ),
     );
