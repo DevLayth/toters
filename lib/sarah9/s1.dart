@@ -35,7 +35,14 @@ class _s1State extends State<s1> {
             borderRadius: BorderRadius.circular(10))
         ),
       ),
-Container(),
+Container(
+  height: 80,
+  width: 80,
+  decoration: BoxDecoration(
+    color: Colors.grey,
+    borderRadius: BorderRadius.circular(10)
+  ),
+),
     ]),
     );
   }
