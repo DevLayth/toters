@@ -12,11 +12,17 @@ class s1 extends StatefulWidget {
 class _s1State extends State<s1> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(elevation: 0.0,
+    return Scaffold(
+      appBar: AppBar(elevation: 0.0,
     leading: Icon(Icons.sort),
+    actions: [
+      
+    ],
 
 
 
-    ),);
+    ),
+    body: Column(children: []),
+    );
   }
 }
