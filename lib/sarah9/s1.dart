@@ -22,7 +22,13 @@ class _s1State extends State<s1> {
 
 
     ),
-    body: Column(children: []),
+    body: Column(children: [
+      TextField(
+        decoration: InputDecoration(
+          border: OutlineInputBorder(borderRadius: BorderRadius.circular(10))
+        ),
+      )
+    ]),
     );
   }
 }
