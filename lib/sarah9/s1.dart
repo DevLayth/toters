@@ -25,7 +25,10 @@ class _s1State extends State<s1> {
     body: Column(children: [
       TextField(
         decoration: InputDecoration(
-          border: OutlineInputBorder(borderRadius: BorderRadius.circular(10))
+          filled: true,
+          fillColor: Color(0xff3a3e3e),
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(10))
         ),
       )
     ]),
