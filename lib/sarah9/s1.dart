@@ -25,12 +25,17 @@ class _s1State extends State<s1> {
     body: Column(children: [
       TextField(
         decoration: InputDecoration(
+          hintText: "Search for store or an item",
+          hintStyle: TextStyle(color: Colors.white),
+          prefixIcon: Icon(Icons.search,color: Colors.white,),
           filled: true,
           fillColor: Color(0xff3a3e3e),
           border: OutlineInputBorder(
+            borderSide: BorderSide.none,
             borderRadius: BorderRadius.circular(10))
         ),
-      )
+      ),
+Container(),
     ]),
     );
   }
