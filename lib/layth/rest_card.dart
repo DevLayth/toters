@@ -72,10 +72,14 @@ class rest_card extends StatelessWidget {
             )),
         Positioned(right: 42, bottom: 40, child: Text("mins")),
         Positioned(
+            left: 5,
             bottom: 20,
             child: Text(name,
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18))),
-        Positioned(bottom: 0, child: Text(desc, style: TextStyle(fontSize: 15)))
+        Positioned(
+            bottom: 0,
+            left: 5,
+            child: Text(desc, style: TextStyle(fontSize: 15)))
       ],
     );
   }

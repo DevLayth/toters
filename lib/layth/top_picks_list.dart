@@ -55,6 +55,7 @@ class top_picks extends StatelessWidget {
                     if (snapshot.hasData) {
                       final restaurants = snapshot.data!;
                       return ListView.builder(
+                        physics: BouncingScrollPhysics(),
                         scrollDirection: Axis.horizontal,
                         itemCount: restaurants.length,
                         itemBuilder: (context, index) {

@@ -57,6 +57,7 @@ class near_free extends StatelessWidget {
                           .where((restaurant) => restaurant.diliver <= 20)
                           .toList();
                       return ListView.builder(
+                        physics: BouncingScrollPhysics(),
                         scrollDirection: Axis.horizontal,
                         itemCount: restaurants.length,
                         itemBuilder: (context, index) {
