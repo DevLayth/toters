@@ -9,6 +9,8 @@ import 'package:toters/layth/catg_card.dart';
 import 'package:toters/layth/data_classes.dart';
 import 'package:toters/layth/rest_data.dart';
 
+import 'menu_card.dart';
+
 class Foodpage extends StatefulWidget {
   const Foodpage({super.key});
 
@@ -63,7 +65,14 @@ class _FoodpageState extends State<Foodpage> {
               selectedIndex: 0,
             ),
           ),
+          SliverList(delegate: SliverChildBuilderDelegate((context, Index) {
+            return MenuCategoryItem(
+              title: demoCategoryMenus[Index].category,
+              items: [],
+            );
+          })),
         ],
+        semanticChildCount: demoCategoryMenus.length,
       ),
     );
   }

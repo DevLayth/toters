@@ -24,8 +24,8 @@ List<catg> catg_data = [
     i: 2,
   ),
   catg(
-    img: "assets/catag/drinks.png",
-    title: "Drinks",
+    img: "assets/catag/butler.png",
+    title: "Butler",
     i: 3,
   ),
   catg(
