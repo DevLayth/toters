@@ -64,7 +64,7 @@ class rest_card extends StatelessWidget {
           ),
         ),
         Positioned(
-            right: 35,
+            right: 30,
             bottom: 55,
             child: Text(
               diliver,
