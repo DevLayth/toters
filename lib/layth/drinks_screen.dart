@@ -4,7 +4,10 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:toters/colors.dart';
 import 'package:toters/layth/rest_card.dart';
 import 'package:toters/layth/rest_data.dart';
+import 'package:toters/layth/resturant_data_fetch.dart';
 import 'package:toters/maryam/account_screen.dart';
+
+import 'data_classes.dart';
 
 class Drinks_screen extends StatelessWidget {
   const Drinks_screen({super.key});
@@ -29,18 +32,56 @@ class Drinks_screen extends StatelessWidget {
             },
           ),
         ),
-        body: Padding(
-          padding: const EdgeInsets.only(top: 30),
-          child: Center(
-            child: Container(
-              width: 450,
-              child: Padding(
-                padding: const EdgeInsets.only(left: 20, right: 20),
-                child: ListView.builder(
-                    itemCount: r_data.length,
-                    itemBuilder: (context, index) {
-                      if (r_data[index].type == "Drinks") {
+        body: Center(
+          child: Container(
+            child: FutureBuilder<List<Restaurant>>(
+              future: fetchRestaurants(),
+              builder: (context, snapshot) {
+                if (snapshot.hasData) {
+                  final restaurants = snapshot.data!
+                      .where((restaurant) => restaurant.type == "drink")
+                      .toList();
+                  return Container(
+                    color: Colors.white,
+                    child: ListView.builder(
+                      scrollDirection: Axis.vertical,
+                      itemCount: restaurants.length,
+                      itemBuilder: (context, index) {
+                        final restaurant = restaurants[index];
+
                         return Padding(
+                          padding: const EdgeInsets.only(
+                              right: 20, left: 15, top: 30, bottom: 10),
+                          child: Container(
+                            width: 340,
+                            color: Colors.white,
+                            child: rest_card(
+                                img: restaurant.image,
+                                name: restaurant.name,
+                                desc: restaurant.desc,
+                                diliver: restaurant.diliver.toString() +
+                                    " - " +
+                                    (restaurant.diliver + 10).toString()),
+                          ),
+                        );
+                      },
+                    ),
+                  );
+                } else if (snapshot.hasError) {
+                  return Center(child: Text('${snapshot.error}'));
+                } else {
+                  return Center(child: CircularProgressIndicator());
+                }
+              },
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+/*
+return Padding(
                           padding: const EdgeInsets.only(bottom: 10),
                           child: rest_card(
                             img: r_data[index].img!,
@@ -49,14 +90,5 @@ class Drinks_screen extends StatelessWidget {
                             desc: r_data[index].desc!,
                           ),
                         );
-                      } else
-                        return ListBody();
-                    }),
-              ),
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
+                      }
+*/

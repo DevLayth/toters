@@ -53,12 +53,16 @@ class near_free extends StatelessWidget {
                   future: fetchRestaurants(),
                   builder: (context, snapshot) {
                     if (snapshot.hasData) {
-                      final restaurants = snapshot.data!;
+                      final restaurants = snapshot.data!
+                          .where((restaurant) => restaurant.diliver <= 20)
+                          .toList();
                       return ListView.builder(
+                        physics: BouncingScrollPhysics(),
                         scrollDirection: Axis.horizontal,
                         itemCount: restaurants.length,
                         itemBuilder: (context, index) {
                           final restaurant = restaurants[index];
+
                           return Padding(
                             padding: const EdgeInsets.only(
                                 right: 20, left: 15, top: 0),
@@ -68,7 +72,9 @@ class near_free extends StatelessWidget {
                                   img: restaurant.image,
                                   name: restaurant.name,
                                   desc: restaurant.desc,
-                                  diliver: restaurant.diliver),
+                                  diliver: restaurant.diliver.toString() +
+                                      " - " +
+                                      (restaurant.diliver + 10).toString()),
                             ),
                           );
                         },
@@ -88,28 +94,3 @@ class near_free extends StatelessWidget {
     );
   }
 }
-
-
-/*
-
-
-ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: r_data.length,
-                    itemBuilder: (context, index) {
-                      return Padding(
-                        padding:
-                            const EdgeInsets.only(right: 20, left: 15, top: 0),
-                        child: Container(
-                          width: 340,
-                          child: rest_card(
-                              img: r_data[index].img!,
-                              name: r_data[index].name!,
-                              desc: r_data[index].desc!,
-                              diliver: r_data[index].dliver!),
-                        ),
-                      );
-                    }),
-
-
-*/

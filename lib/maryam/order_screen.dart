@@ -28,7 +28,11 @@ class order_screen extends StatelessWidget {
                   "Past Orders",
                   style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                 )),
+<<<<<<< HEAD
             Positioned(
+=======
+            /*  Positioned(
+>>>>>>> 9e29a64e5edc5f449b9bbf5d6e9a68326fb70a3f
               top: 50,
               left: 0,
               right: 0,

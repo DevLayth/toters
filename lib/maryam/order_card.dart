@@ -3,7 +3,10 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/widgets.dart';
 import 'package:toters/colors.dart';
+<<<<<<< HEAD
 import 'package:toters/maryam/order_list.dart';
+=======
+>>>>>>> 9e29a64e5edc5f449b9bbf5d6e9a68326fb70a3f
 
 class order_card extends StatelessWidget {
   const order_card({super.key});

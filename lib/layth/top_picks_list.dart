@@ -4,6 +4,9 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:toters/colors.dart';
 import 'package:toters/layth/rest_card.dart';
 import 'package:toters/layth/rest_data.dart';
+import 'package:toters/layth/resturant_data_fetch.dart';
+
+import 'data_classes.dart';
 
 class top_picks extends StatelessWidget {
   const top_picks({super.key});
@@ -46,23 +49,41 @@ class top_picks extends StatelessWidget {
               child: Container(
                 height: 225,
                 width: 415,
-                child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: r_data.length,
-                    itemBuilder: (context, index) {
-                      return Padding(
-                        padding:
-                            const EdgeInsets.only(right: 20, left: 15, top: 0),
-                        child: Container(
-                          width: 340,
-                          child: rest_card(
-                              img: r_data[index].img!,
-                              name: r_data[index].name!,
-                              desc: r_data[index].desc!,
-                              diliver: r_data[index].dliver!),
-                        ),
+                child: FutureBuilder<List<Restaurant>>(
+                  future: fetchRestaurants(),
+                  builder: (context, snapshot) {
+                    if (snapshot.hasData) {
+                      final restaurants = snapshot.data!;
+                      return ListView.builder(
+                        physics: BouncingScrollPhysics(),
+                        scrollDirection: Axis.horizontal,
+                        itemCount: restaurants.length,
+                        itemBuilder: (context, index) {
+                          final restaurant = restaurants[index];
+
+                          return Padding(
+                            padding: const EdgeInsets.only(
+                                right: 20, left: 15, top: 0),
+                            child: Container(
+                              width: 340,
+                              child: rest_card(
+                                  img: restaurant.image,
+                                  name: restaurant.name,
+                                  desc: restaurant.desc,
+                                  diliver: restaurant.diliver.toString() +
+                                      " - " +
+                                      (restaurant.diliver + 10).toString()),
+                            ),
+                          );
+                        },
                       );
-                    }),
+                    } else if (snapshot.hasError) {
+                      return Center(child: Text('${snapshot.error}'));
+                    } else {
+                      return Center(child: CircularProgressIndicator());
+                    }
+                  },
+                ),
               ),
             )
           ],

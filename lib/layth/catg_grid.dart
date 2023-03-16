@@ -17,6 +17,7 @@ class catg_grid extends StatelessWidget {
         width: 400,
         child: Center(
           child: GridView.builder(
+              physics: BouncingScrollPhysics(),
               itemCount: catg_data.length,
               gridDelegate:
                   SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
