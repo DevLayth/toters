@@ -4,7 +4,7 @@ class Restaurant {
   final String image;
   final String type;
   final String desc;
-  final String diliver;
+  final int diliver;
   final List<MenuItem> menu;
 
   Restaurant(

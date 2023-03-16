@@ -1,10 +1,10 @@
 [{
     "rid":"1",
-    "rname":"ofelia",
-    "rimg":"assets/rest/ofelia.png",
+    "rname":"texas",
+    "rimg":"assets/rest/texas.png",
     "rtype":"food",
-    "rdesc":"$$ Fast Food",
-    "rdliver":"20-30",
+    "rdesc":"$$$ Fast Food",
+    "rdliver":25,
     "rmenu":[
     {
         "fid":"1","fname":"pizza","fprice":"8000"
@@ -22,11 +22,11 @@
 },
 {
     "rid":"2",
-    "rname":"texas",
-    "rimg":"assets/rest/texas.png",
+    "rname":"ofelia",
+    "rimg":"assets/rest/ofelia.png",
     "rtype":"food",
-    "rdesc":"$$$ Fast Food",
-    "rdliver":"15-25",
+    "rdesc":"$$ Fast Food",
+    "rdliver":15,
     "rmenu":[
     {
         "fid":"1","fname":"pizza","fprice":"8000"
@@ -48,7 +48,7 @@
     "rimg":"assets/rest/shaghaf.jpg",
     "rtype":"drink",
     "rdesc":"$$$ Coffee",
-    "rdliver":"10-15",
+    "rdliver":18,
     "rmenu":[
  
 ]
@@ -59,7 +59,7 @@
     "rimg":"assets/rest/eat_go.jpg",
     "rtype":"food",
     "rdesc":"$ Fast Food",
-    "rdliver":"20-30",
+    "rdliver":19,
     "rmenu":[
     
 ]
@@ -70,7 +70,7 @@
     "rimg":"assets/rest/organic.jpg",
     "rtype":"drink",
     "rdesc":"$$ Joices",
-    "rdliver":"25-30",
+    "rdliver":25,
     "rmenu":[
     
 ]

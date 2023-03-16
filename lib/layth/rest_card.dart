@@ -20,7 +20,7 @@ class rest_card extends StatelessWidget {
       children: [
         Container(
           height: 225,
-          width: 300,
+          width: 370,
           color: Colors.white,
         ),
         Container(
