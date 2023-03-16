@@ -3,7 +3,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/widgets.dart';
 import 'package:toters/colors.dart';
-import 'package:toters/maryam/orders_list.dart';
+import 'package:toters/maryam/order_list.dart';
 
 class order_card extends StatelessWidget {
   const order_card({super.key});
@@ -68,6 +68,7 @@ class order_card extends StatelessWidget {
               size: 40,
             ),
           ),
+          Positioned(left: 0, right: 0, top: 110, child: orders_list()),
         ],
       ),
     );
