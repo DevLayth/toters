@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:toters/colors.dart';
+import 'package:toters/layth/catg_bar_card.dart';
+import 'package:toters/layth/catg_bar_list.dart';
 import 'package:toters/layth/catg_grid.dart';
 import 'package:toters/layth/green_pts_card.dart';
 import 'package:toters/layth/near_free_list.dart';
 import 'package:toters/layth/offer_slider.dart';
+import 'package:toters/layth/recomended_rest.dart';
 import 'package:toters/layth/rest_card.dart';
 import 'package:toters/layth/rest_data.dart';
 import 'package:toters/layth/top_picks_list.dart';
@@ -54,6 +58,8 @@ class home_screen extends StatelessWidget {
           ),
         ),
         body: ListView(
+          scrollDirection: Axis.vertical,
+          shrinkWrap: true,
           children: [
             GreenPts(),
             Container(
@@ -68,8 +74,20 @@ class home_screen extends StatelessWidget {
                 )),
             top_picks(),
             near_free(),
+            catg_bar_list(),
+            Padding(
+              padding: const EdgeInsets.only(left: 18, top: 15),
+              child: Container(
+                color: Colors.white,
+                child: Text(
+                  "Recomended",
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                ),
+              ),
+            ),
+            recomended_rest(),
             Container(
-              height: 20,
+              height: 70,
             )
           ],
         ),

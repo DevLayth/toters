@@ -13,10 +13,10 @@ class catcard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        if (i == 0) {
+        if (i == 1) {
           Navigator.push(context,
               MaterialPageRoute(builder: (context) => Drinks_screen()));
-        } else if (i == 1) {
+        } else if (i == 2) {
           Navigator.push(context,
               MaterialPageRoute(builder: (context) => Drinks_screen()));
         } /*  else if (i == 2) {

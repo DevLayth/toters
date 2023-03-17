@@ -4,6 +4,7 @@ import 'package:toters/colors.dart';
 import 'package:toters/layth/home_screen.dart';
 import 'package:toters/maryam/account_screen.dart';
 import 'package:toters/maryam/order_screen.dart';
+import 'package:toters/sarah9/s1.dart';
 import 'package:toters/sarah9/screen3.dart';
 
 class MyNavBar extends StatefulWidget {
@@ -16,7 +17,7 @@ class _MyNavBarState extends State<MyNavBar> {
 
   static List<Widget> _widgetOptions = <Widget>[
     home_screen(),
-    Screen3(),
+    s1(),
     Foodpage(),
     order_screen(),
     acoount_screen(),

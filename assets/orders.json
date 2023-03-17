@@ -1,0 +1,31 @@
+[
+    {"order_id":1,
+    "rest_name":"ofelia",
+    "rest_img":"assets/rest/ofelia.png",
+      "order_items":[{"item_name":"burger","item_price":4000,"quantity":1},
+                     {"item_name":"falafel","item_price":2500,"quantity":2}]
+
+    },
+    {"order_id":2,
+    "rest_name":"Organic Joices",
+    "rest_img":"assets/rest/organic.jpg",
+      "order_items":[{"item_name":"King","item_price":2000,"quantity":1},
+                     {"item_name":"Morroco","item_price":2000,"quantity":2},
+                     {"item_name":"Apple","item_price":1500,"quantity":1}]
+
+    },
+    {"order_id":3,
+    "rest_name":"Shaghaf - Duhok",
+    "rest_img":"assets/rest/shaghaf.jpg",
+      "order_items":[{"item_name":"coffee late","item_price":5000,"quantity":1},
+                     {"item_name":"Espresso","item_price":2500,"quantity":2}]
+
+    },
+    {"order_id":4,
+    "rest_name":"Eat & Go",
+    "rest_img":"assets/rest/eat_go.jpg",
+      "order_items":[{"item_name":"Energy falafel","item_price":3000,"quantity":1},
+                     {"item_name":"Rizo","item_price":3500,"quantity":1}]
+
+    }
+]

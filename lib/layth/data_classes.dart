@@ -1,10 +1,10 @@
 class Restaurant {
-  final String id;
+  final int id;
   final String name;
   final String image;
   final String type;
   final String desc;
-  final String diliver;
+  final int diliver;
   final List<MenuItem> menu;
 
   Restaurant(
@@ -18,7 +18,7 @@ class Restaurant {
 }
 
 class MenuItem {
-  final String id;
+  final int id;
   final String name;
   final String price;
 

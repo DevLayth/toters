@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:toters/maryam/order_card.dart';
+import 'package:toters/maryam/order_list.dart';
+import 'package:toters/maryam/order_list_card.dart';
 
 class order_screen extends StatelessWidget {
   const order_screen({super.key});
@@ -26,11 +28,12 @@ class order_screen extends StatelessWidget {
                   "Past Orders",
                   style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                 )),
-            Container(
-              child: ListView(
-                children: [order_card(), order_card()],
-              ),
-            )
+            Positioned(
+              top: 50,
+              left: 0,
+              right: 0,
+              child: order_card(),
+            ),
           ],
         ),
       ),

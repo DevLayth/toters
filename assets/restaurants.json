@@ -1,76 +1,76 @@
 [{
-    "rid":"1",
-    "rname":"ofelia",
-    "rimg":"assets/rest/ofelia.png",
-    "rtype":"food",
-    "rdesc":"$$ Fast Food",
-    "rdliver":"20-30",
-    "rmenu":[
-    {
-        "fid":"1","fname":"pizza","fprice":"8000"
-    },
-    {
-        "fid":"2","fname":"burger","fprice":"4000"
-    },
-    {
-        "fid":"3","fname":"falafel","fprice":"2500"
-    },
-    {
-        "fid":"4","fname":"cryspy","fprice":"3500"
-    }
-]
-},
-{
-    "rid":"2",
+    "rid":1,
     "rname":"texas",
     "rimg":"assets/rest/texas.png",
     "rtype":"food",
     "rdesc":"$$$ Fast Food",
-    "rdliver":"15-25",
+    "rdliver":25,
     "rmenu":[
     {
-        "fid":"1","fname":"pizza","fprice":"8000"
+        "fid":1,"fname":"pizza","fprice":"8000"
     },
     {
-        "fid":"2","fname":"burger","fprice":"4000"
+        "fid":2,"fname":"burger","fprice":"4000"
     },
     {
-        "fid":"3","fname":"falafel","fprice":"2500"
+        "fid":3,"fname":"falafel","fprice":"2500"
     },
     {
-        "fid":"4","fname":"cryspy","fprice":"3500"
+        "fid":4,"fname":"cryspy","fprice":"3500"
     }
 ]
 },
 {
-    "rid":"3",
+    "rid":2,
+    "rname":"ofelia",
+    "rimg":"assets/rest/ofelia.png",
+    "rtype":"food",
+    "rdesc":"$$ Fast Food",
+    "rdliver":15,
+    "rmenu":[
+    {
+        "fid":1,"fname":"pizza","fprice":"8000"
+    },
+    {
+        "fid":2,"fname":"burger","fprice":"4000"
+    },
+    {
+        "fid":3,"fname":"falafel","fprice":"2500"
+    },
+    {
+        "fid":4,"fname":"cryspy","fprice":"3500"
+    }
+]
+},
+{
+    "rid":3,
     "rname":"Shaghaf - Duhok",
     "rimg":"assets/rest/shaghaf.jpg",
     "rtype":"drink",
     "rdesc":"$$$ Coffee",
-    "rdliver":"10-15",
+    "rdliver":18,
     "rmenu":[
  
 ]
 },
 {
-    "rid":"4",
+    "rid":4,
     "rname":"Eat&Go",
     "rimg":"assets/rest/eat_go.jpg",
     "rtype":"food",
     "rdesc":"$ Fast Food",
-    "rdliver":"20-30",
+    "rdliver":19,
     "rmenu":[
     
 ]
 },
 {
-    "rid":"5",
+    "rid":5,
     "rname":"Organic Joice",
     "rimg":"assets/rest/organic.jpg",
     "rtype":"drink",
     "rdesc":"$$ Joices",
-    "rdliver":"25-30",
+    "rdliver":25,
     "rmenu":[
     
 ]

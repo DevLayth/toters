@@ -2,8 +2,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:toters/aref/menu.dart';
-import 'package:toters/aref/restaruant_categories.dart';
 import 'package:toters/aref/restaurant_info.dart';
 import 'package:toters/layth/catg_card.dart';
 import 'package:toters/layth/data_classes.dart';
@@ -59,20 +57,7 @@ class _FoodpageState extends State<Foodpage> {
           SliverToBoxAdapter(
             child: RestaurantInfo(),
           ),
-          SliverToBoxAdapter(
-            child: Categories(
-              onChanged: (value) {},
-              selectedIndex: 0,
-            ),
-          ),
-          SliverList(delegate: SliverChildBuilderDelegate((context, Index) {
-            return MenuCategoryItem(
-              title: demoCategoryMenus[Index].category,
-              items: [],
-            );
-          })),
         ],
-        semanticChildCount: demoCategoryMenus.length,
       ),
     );
   }
