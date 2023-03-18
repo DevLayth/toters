@@ -6,7 +6,18 @@ import 'package:toters/colors.dart';
 import 'package:toters/maryam/order_list.dart';
 
 class order_card extends StatelessWidget {
-  const order_card({super.key});
+  final String name;
+  final String img;
+  final String date;
+  final double total;
+  final int id;
+  const order_card(
+      {super.key,
+      required this.name,
+      required this.img,
+      required this.date,
+      required this.total,
+      required this.id});
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +49,7 @@ class order_card extends StatelessWidget {
             child: CircleAvatar(
               radius: 40.0,
               backgroundImage: AssetImage(
-                'assets/rest/ofelia.png',
+                img,
               ),
             ),
           ),
@@ -46,14 +57,14 @@ class order_card extends StatelessWidget {
               top: 35,
               left: 130,
               child: Text(
-                "Rest_name",
+                name,
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               )),
           Positioned(
               top: 65,
               left: 130,
               child: Text(
-                "Delivered on :",
+                "Delivered on :" + date,
                 style: TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.bold,
@@ -68,7 +79,21 @@ class order_card extends StatelessWidget {
               size: 40,
             ),
           ),
-          Positioned(left: 0, right: 0, top: 110, child: orders_list()),
+          Positioned(
+              left: 0,
+              right: 0,
+              top: 110,
+              child: orders_list(
+                order: id,
+              )),
+          Positioned(
+              right: 0,
+              left: 30,
+              bottom: 30,
+              child: Text(
+                "Total : IQD " + total.toString(),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+              ))
         ],
       ),
     );

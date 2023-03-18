@@ -6,12 +6,14 @@ import 'package:flutter/widgets.dart';
 import '../colors.dart';
 
 class order_list_card extends StatelessWidget {
-  const order_list_card({super.key});
+  final int num;
+  final String text;
+  const order_list_card({super.key, required this.num, required this.text});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.only(left: 10, bottom: 5, top: 5),
       child: Container(
         height: 20,
         child: Stack(
@@ -19,7 +21,7 @@ class order_list_card extends StatelessWidget {
             Positioned(
               left: 10,
               child: Text(
-                "1",
+                num.toString(),
                 style: TextStyle(
                     color: Tcolor, fontSize: 17, fontWeight: FontWeight.bold),
               ),
@@ -27,7 +29,7 @@ class order_list_card extends StatelessWidget {
             Positioned(
               left: 35,
               child: Text(
-                "chicken Shawarma & Rice",
+                text,
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 17,
