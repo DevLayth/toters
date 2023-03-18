@@ -1,5 +1,5 @@
 class Restaurant {
-  final String id;
+  final int id;
   final String name;
   final String image;
   final String type;
@@ -18,7 +18,7 @@ class Restaurant {
 }
 
 class MenuItem {
-  final String id;
+  final int id;
   final String name;
   final String price;
 

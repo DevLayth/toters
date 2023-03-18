@@ -1,5 +1,5 @@
 [{
-    "rid":"1",
+    "rid":1,
     "rname":"texas",
     "rimg":"assets/rest/texas.png",
     "rtype":"food",
@@ -7,21 +7,21 @@
     "rdliver":25,
     "rmenu":[
     {
-        "fid":"1","fname":"pizza","fprice":"8000"
+        "fid":1,"fname":"pizza","fprice":"8000"
     },
     {
-        "fid":"2","fname":"burger","fprice":"4000"
+        "fid":2,"fname":"burger","fprice":"4000"
     },
     {
-        "fid":"3","fname":"falafel","fprice":"2500"
+        "fid":3,"fname":"falafel","fprice":"2500"
     },
     {
-        "fid":"4","fname":"cryspy","fprice":"3500"
+        "fid":4,"fname":"cryspy","fprice":"3500"
     }
 ]
 },
 {
-    "rid":"2",
+    "rid":2,
     "rname":"ofelia",
     "rimg":"assets/rest/ofelia.png",
     "rtype":"food",
@@ -29,21 +29,21 @@
     "rdliver":15,
     "rmenu":[
     {
-        "fid":"1","fname":"pizza","fprice":"8000"
+        "fid":1,"fname":"pizza","fprice":"8000"
     },
     {
-        "fid":"2","fname":"burger","fprice":"4000"
+        "fid":2,"fname":"burger","fprice":"4000"
     },
     {
-        "fid":"3","fname":"falafel","fprice":"2500"
+        "fid":3,"fname":"falafel","fprice":"2500"
     },
     {
-        "fid":"4","fname":"cryspy","fprice":"3500"
+        "fid":4,"fname":"cryspy","fprice":"3500"
     }
 ]
 },
 {
-    "rid":"3",
+    "rid":3,
     "rname":"Shaghaf - Duhok",
     "rimg":"assets/rest/shaghaf.jpg",
     "rtype":"drink",
@@ -54,7 +54,7 @@
 ]
 },
 {
-    "rid":"4",
+    "rid":4,
     "rname":"Eat&Go",
     "rimg":"assets/rest/eat_go.jpg",
     "rtype":"food",
@@ -65,7 +65,7 @@
 ]
 },
 {
-    "rid":"5",
+    "rid":5,
     "rname":"Organic Joice",
     "rimg":"assets/rest/organic.jpg",
     "rtype":"drink",
