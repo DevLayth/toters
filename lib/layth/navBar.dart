@@ -4,6 +4,7 @@ import 'package:toters/colors.dart';
 import 'package:toters/layth/home_screen.dart';
 import 'package:toters/maryam/account_screen.dart';
 import 'package:toters/maryam/order_screen.dart';
+import 'package:toters/maryam/order_screen_click.dart';
 import 'package:toters/sarah9/s1.dart';
 import 'package:toters/sarah9/screen3.dart';
 
@@ -19,7 +20,7 @@ class _MyNavBarState extends State<MyNavBar> {
     home_screen(),
     s1(),
     Foodpage(),
-    order_screen(),
+    order_screen_click(),
     acoount_screen(),
   ];
 
