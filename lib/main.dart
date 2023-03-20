@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:toters/layth/navBar.dart';
-import 'package:toters/sarah9/s1.dart';
 
 void main() {
   runApp(const MyApp());
