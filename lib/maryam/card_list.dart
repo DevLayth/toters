@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of b328fb7 (Delete extra imports .)
 import 'package:toters/maryam/order_screen_click.dart';
 >>>>>>> parent of b328fb7 (Delete extra imports .)
 
