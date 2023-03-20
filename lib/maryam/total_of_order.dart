@@ -3,15 +3,19 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:toters/maryam/total_card_row.dart';
 
+import 'orders_data.dart';
+
 class total_of_order extends StatelessWidget {
-  const total_of_order({super.key});
+  final int sub;
+  final int df;
+  const total_of_order({super.key,required this.sub,required this.df});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
         padding: const EdgeInsets.all(10.0),
         child: Container(
-          height: 400,
+          height: 250,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
               color: Colors.white,
@@ -27,12 +31,30 @@ class total_of_order extends StatelessWidget {
             children: [
               total_card_row(
                 text: "Subtotal",
-                price: " IQD 8000",
+                price:"IQD "+ sub.toString(),
               ),
               total_card_row(
-                text: "Delivery Charge",
-                price: " IQD 2500",
-              )
+                text: "Delivery charge",
+                price: "IQD "+ df.toString(),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(17.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "Total",
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      "IQD "+ (sub+df).toString(),
+                      style:
+                          TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ));

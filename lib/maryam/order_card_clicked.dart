@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/widgets.dart';
 import 'package:toters/colors.dart';
 import 'package:toters/maryam/order_list.dart';
 import 'package:toters/maryam/order_list_card_with_img.dart';
 import 'package:toters/maryam/rate_star.dart';
-import 'package:toters/maryam/total_of_order.dart';
+import 'orders_data.dart';
 
 class order_card_clicked extends StatelessWidget {
   final String name;
@@ -297,20 +296,23 @@ class order_card_clicked extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: ListView(
-                        shrinkWrap: true,
-                        physics: NeverScrollableScrollPhysics(),
-                        children: [
-                          order_card_list_with_img(),
-                          order_card_list_with_img()
-                        ],
-                      ),
-                    )
+                        padding: const EdgeInsets.all(8.0),
+                        child: ListView.builder(
+                          shrinkWrap: true,
+                          physics: NeverScrollableScrollPhysics(),
+                          itemCount: orderlist[id].ordrs.length,
+                          itemBuilder: (context, index) {
+                            return order_card_list_with_img(
+                              text: orderlist[id].ordrs[index].text,
+                              num: orderlist[id].ordrs[index].num.toString(),
+                              price:
+                                  orderlist[id].ordrs[index].price.toString(),
+                              img: orderlist[id].ordrs[index].img,
+                            );
+                          },
+                        ))
                   ]),
             )),
-       
-      
       ],
     );
   }
