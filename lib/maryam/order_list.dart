@@ -1,7 +1,5 @@
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+
 import 'package:flutter/widgets.dart';
-import 'package:toters/maryam/order_card.dart';
 import 'package:toters/maryam/order_list_card.dart';
 import 'package:toters/maryam/orders_data.dart';
 

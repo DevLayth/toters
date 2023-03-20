@@ -20,7 +20,7 @@ class _MyNavBarState extends State<MyNavBar> {
     home_screen(),
     s1(),
     Foodpage(),
-    order_screen_click(),
+    order_screen(),
     acoount_screen(),
   ];
 
