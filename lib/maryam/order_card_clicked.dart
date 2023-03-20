@@ -4,7 +4,9 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/widgets.dart';
 import 'package:toters/colors.dart';
 import 'package:toters/maryam/order_list.dart';
+import 'package:toters/maryam/order_list_card_with_img.dart';
 import 'package:toters/maryam/rate_star.dart';
+import 'package:toters/maryam/total_of_order.dart';
 
 class order_card_clicked extends StatelessWidget {
   final String name;
@@ -250,7 +252,65 @@ class order_card_clicked extends StatelessWidget {
               ),
             ),
           ),
-        )
+        ),
+        Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Container(
+              height: 300,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Colors.white,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.3),
+                    spreadRadius: 2,
+                    blurRadius: 5,
+                    offset: Offset(0, 3),
+                  ),
+                ],
+              ),
+              child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(15.0),
+                      child: Text(
+                        "Your Order",
+                        style: TextStyle(
+                            fontSize: 17, fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 15, top: 5),
+                      child: Container(
+                        height: 40,
+                        width: 80,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(25),
+                            color: Color.fromARGB(56, 62, 180, 137)),
+                        child: Center(
+                            child: Text(
+                          "Delivered",
+                          style: TextStyle(
+                              color: Tcolor, fontWeight: FontWeight.bold),
+                        )),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: ListView(
+                        shrinkWrap: true,
+                        physics: NeverScrollableScrollPhysics(),
+                        children: [
+                          order_card_list_with_img(),
+                          order_card_list_with_img()
+                        ],
+                      ),
+                    )
+                  ]),
+            )),
+       
+      
       ],
     );
   }
