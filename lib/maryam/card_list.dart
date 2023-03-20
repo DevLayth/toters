@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:toters/maryam/order_screen_click.dart';
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/src/widgets/placeholder.dart';
 
 import 'order_card.dart';
 import 'orders_data.dart';
@@ -14,21 +15,12 @@ class card_list extends StatelessWidget {
         physics: BouncingScrollPhysics(),
         itemCount: orderlist.length,
         itemBuilder: (context, index) {
-          return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => order_screen_click(
-                              id: index,
-                            )));
-              },
-              child: order_card(
-                  name: orderlist[index].name,
-                  img: orderlist[index].img,
-                  date: orderlist[index].date,
-                  total: orderlist[index].total,
-                  id: index));
+          return order_card(
+              name: orderlist[index].name,
+              img: orderlist[index].img,
+              date: orderlist[index].date,
+              total: orderlist[index].total,
+              id: index);
         });
   }
 }

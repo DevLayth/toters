@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:flutter/widgets.dart';
+
 import '../colors.dart';
 
 class order_list_card extends StatelessWidget {

@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:toters/colors.dart';
 
 class order_card_list_with_img extends StatelessWidget {
-  final String text;
-  final String num;
-  final String price;
-  final String img;
-  const order_card_list_with_img(
-      {super.key, required this.text, required this.num, required this.price,required this.img});
+  const order_card_list_with_img({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +20,7 @@ class order_card_list_with_img extends StatelessWidget {
               decoration:
                   BoxDecoration(borderRadius: BorderRadius.circular(15)),
               child: Image.asset(
-               img,
+                "assets/rest/ofelia.png",
                 fit: BoxFit.cover,
               ),
             ),
@@ -31,7 +28,7 @@ class order_card_list_with_img extends StatelessWidget {
               left: 80,
               top: 5,
               child: Text(
-                text,
+                "chicken & Rice",
                 style: TextStyle(fontSize: 17),
               ),
             ),
@@ -39,7 +36,7 @@ class order_card_list_with_img extends StatelessWidget {
               left: 80,
               top: 30,
               child: Text(
-                num,
+                "1",
                 style: TextStyle(fontSize: 17, color: Tcolor),
               ),
             ),
@@ -47,7 +44,7 @@ class order_card_list_with_img extends StatelessWidget {
               right: 10,
               top: 5,
               child: Text(
-                "IQD " + price,
+                "IQD 8000",
                 style: TextStyle(
                     fontSize: 17,
                     color: Colors.black45,
