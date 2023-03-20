@@ -1,9 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
+<<<<<<< HEAD
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/widgets.dart';
 import 'package:toters/colors.dart';
 import 'package:toters/maryam/order_list.dart';
+=======
+import 'package:flutter/widgets.dart';
+import 'package:toters/colors.dart';
+import 'package:toters/maryam/order_list.dart';
+import 'package:toters/maryam/order_list_card_with_img.dart';
+import 'package:toters/maryam/rate_star.dart';
+import 'orders_data.dart';
+>>>>>>> parent of b328fb7 (Delete extra imports .)
 
 class order_card_clicked extends StatelessWidget {
   final String name;
