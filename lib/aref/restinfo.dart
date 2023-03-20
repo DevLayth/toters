@@ -33,6 +33,14 @@ class MyWidget extends StatelessWidget {
                   Row(
                     children: [
                       Text(
+                        "food desc",
+                        style: TextStyle(fontSize: 16),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Text(
                         "price",
                         style: TextStyle(
                             color: Color.fromARGB(255, 9, 143, 14),
