@@ -45,15 +45,6 @@ class top_picks extends StatelessWidget {
               ),
             ),
             Positioned(
-              right: 20,
-              top: 10,
-              child: Icon(
-                Icons.chevron_right_outlined,
-                color: Tcolor,
-                size: 35,
-              ),
-            ),
-            Positioned(
               top: 80,
               child: Container(
                 height: 225,

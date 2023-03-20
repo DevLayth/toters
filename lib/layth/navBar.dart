@@ -51,7 +51,7 @@ class _MyNavBarState extends State<MyNavBar> {
                 label: 'Search',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.diamond_outlined),
+                icon: Icon(Icons.label),
                 label: 'Butler',
               ),
               BottomNavigationBarItem(

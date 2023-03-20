@@ -6,7 +6,6 @@ import 'package:toters/layth/catg_grid.dart';
 import 'package:toters/layth/green_pts_card.dart';
 import 'package:toters/layth/near_free_list.dart';
 import 'package:toters/layth/offer_slider.dart';
-import 'package:toters/layth/picks_of_the_week.dart';
 import 'package:toters/layth/recomended_rest.dart';
 import 'package:toters/layth/rest_card.dart';
 import 'package:toters/layth/rest_data.dart';
@@ -75,7 +74,6 @@ class home_screen extends StatelessWidget {
                 )),
             top_picks(),
             near_free(),
-            picks_week_list(),
             catg_bar_list(),
             Padding(
               padding: const EdgeInsets.only(left: 18, top: 15),

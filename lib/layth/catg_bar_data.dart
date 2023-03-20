@@ -9,11 +9,12 @@ class catg_bar_data {
 
 List<catg_bar_data> bar_data = [
   catg_bar_data(img: "assets/catag/breakfast.png", txt: "breakfast"),
-  catg_bar_data(img: "assets/catag/food.png", txt: "burgers"),
-  catg_bar_data(img: "assets/catag/pizza.png", txt: "Pizza"),
-  catg_bar_data(img: "assets/catag/drinks.png", txt: "Coffee"),
-  catg_bar_data(img: "assets/catag/fast_food.png", txt: "Fast Food"),
-  catg_bar_data(img: "assets/catag/chicken.png", txt: "Chicken"),
-  catg_bar_data(img: "assets/catag/ice_cream.png", txt: "Ice Cream"),
-  catg_bar_data(img: "assets/catag/juices.png", txt: "Juices"),
+  catg_bar_data(img: "assets/catag/breakfast.png", txt: "gass"),
+  catg_bar_data(img: "assets/catag/breakfast.png", txt: "burger"),
+  catg_bar_data(img: "assets/catag/breakfast.png", txt: "test"),
+  catg_bar_data(img: "assets/catag/breakfast.png", txt: "tests"),
+  catg_bar_data(img: "assets/catag/breakfast.png", txt: "tests"),
+  catg_bar_data(img: "assets/catag/breakfast.png", txt: "tests"),
+  catg_bar_data(img: "assets/catag/breakfast.png", txt: "tests"),
+  catg_bar_data(img: "assets/catag/breakfast.png", txt: "tests"),
 ];
