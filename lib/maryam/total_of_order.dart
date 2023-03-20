@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:toters/maryam/total_card_row.dart';
-
-import 'orders_data.dart';
 
 class total_of_order extends StatelessWidget {
   final int sub;

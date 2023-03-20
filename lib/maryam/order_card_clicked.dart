@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/widgets.dart';
 import 'package:toters/colors.dart';
-import 'package:toters/maryam/order_list.dart';
 import 'package:toters/maryam/order_list_card_with_img.dart';
 import 'package:toters/maryam/rate_star.dart';
 import 'orders_data.dart';

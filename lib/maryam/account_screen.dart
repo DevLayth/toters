@@ -1,9 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:toters/colors.dart';
-import 'package:toters/maryam/acc_card.dart';
-import 'package:toters/maryam/acc_card2.dart';
 import 'package:toters/maryam/acc_list1.dart';
 import 'package:toters/maryam/acc_list2.dart';
 import 'package:toters/maryam/acc_list3.dart';
