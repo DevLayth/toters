@@ -10,6 +10,8 @@ class order_card extends StatelessWidget {
   final String img;
   final String date;
   final double total;
+  final int df;
+
   final int id;
   const order_card(
       {super.key,
@@ -17,7 +19,8 @@ class order_card extends StatelessWidget {
       required this.img,
       required this.date,
       required this.total,
-      required this.id});
+      required this.id,
+      required this.df});
 
   @override
   Widget build(BuildContext context) {
@@ -91,7 +94,7 @@ class order_card extends StatelessWidget {
               left: 30,
               bottom: 30,
               child: Text(
-                "Total : IQD " + total.toString(),
+                "Total : IQD " + (total + df).toString(),
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
               ))
         ],

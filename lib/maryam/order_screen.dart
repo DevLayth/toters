@@ -21,16 +21,20 @@ class order_screen extends StatelessWidget {
             style: TextStyle(color: Colors.black),
           ),
         ),
-        body: Stack(
+        body: ListView(
           children: [
-            Positioned(
-                left: 20,
-                top: 20,
+            Container(
+              height: 50,
+              color: Colors.white,
+              child: Padding(
+                padding: const EdgeInsets.all(15.0),
                 child: Text(
                   "Past Orders",
                   style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-                )),
-            Positioned(top: 50, left: 0, right: 0, child: card_list())
+                ),
+              ),
+            ),
+            Container(height: 680, child: card_list())
           ],
         ),
       ),

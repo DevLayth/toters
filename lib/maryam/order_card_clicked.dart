@@ -65,7 +65,7 @@ class order_card_clicked extends StatelessWidget {
                       ),
                       Positioned(
                           top: 35,
-                          left: 130,
+                          left: 110,
                           child: Text(
                             name,
                             style: TextStyle(
@@ -73,7 +73,7 @@ class order_card_clicked extends StatelessWidget {
                           )),
                       Positioned(
                           top: 65,
-                          left: 130,
+                          left: 110,
                           child: Text(
                             "Delivered on :" + date,
                             style: TextStyle(

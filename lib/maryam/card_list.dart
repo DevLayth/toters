@@ -12,8 +12,8 @@ class card_list extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+        scrollDirection: Axis.vertical,
         shrinkWrap: true,
-        physics: BouncingScrollPhysics(),
         itemCount: orderlist.length,
         itemBuilder: (context, index) {
           return GestureDetector(
@@ -30,6 +30,7 @@ class card_list extends StatelessWidget {
                   img: orderlist[index].img,
                   date: orderlist[index].date,
                   total: orderlist[index].total,
+                  df: orderlist[index].df,
                   id: index));
         });
   }

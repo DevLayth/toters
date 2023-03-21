@@ -8,7 +8,7 @@ import 'package:toters/maryam/orders_data.dart';
 class orders_list extends StatelessWidget {
   final int order;
 
-  const orders_list({super.key,required this.order});
+  const orders_list({super.key, required this.order});
 
   @override
   Widget build(BuildContext context) {
