@@ -9,7 +9,6 @@ import 'package:toters/layth/offer_slider.dart';
 import 'package:toters/layth/picks_of_the_week.dart';
 import 'package:toters/layth/recomended_rest.dart';
 import 'package:toters/layth/rest_card.dart';
-import 'package:toters/layth/rest_data.dart';
 import 'package:toters/layth/top_picks_list.dart';
 
 class home_screen extends StatelessWidget {

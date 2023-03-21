@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:toters/colors.dart';
-import 'package:toters/layth/rest_data.dart';
 
 class rest_card extends StatelessWidget {
   final String img;

@@ -6,7 +6,6 @@ import 'package:toters/aref/restaurant_info.dart';
 import 'package:toters/aref/restinfo.dart';
 import 'package:toters/layth/catg_card.dart';
 import 'package:toters/layth/data_classes.dart';
-import 'package:toters/layth/rest_data.dart';
 
 import 'menu_card.dart';
 

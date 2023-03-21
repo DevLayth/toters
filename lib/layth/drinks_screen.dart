@@ -3,7 +3,6 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:toters/colors.dart';
 import 'package:toters/layth/rest_card.dart';
-import 'package:toters/layth/rest_data.dart';
 import 'package:toters/layth/resturant_data_fetch.dart';
 import 'package:toters/maryam/account_screen.dart';
 
