@@ -15,7 +15,7 @@ class top_picks extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(top: 20),
       child: Container(
-        height: 320,
+        height: 350,
         color: Colors.white,
         child: Stack(
           children: [
@@ -55,7 +55,7 @@ class top_picks extends StatelessWidget {
             Positioned(
               top: 80,
               child: Container(
-                height: 225,
+                height: 250,
                 width: 415,
                 child: FutureBuilder<List<Restaurant>>(
                   future: fetchRestaurants(),
@@ -78,6 +78,7 @@ class top_picks extends StatelessWidget {
                                   img: restaurant.image,
                                   name: restaurant.name,
                                   desc: restaurant.desc,
+                                  rate: restaurant.rate,
                                   diliver: restaurant.diliver.toString() +
                                       " - " +
                                       (restaurant.diliver + 10).toString()),

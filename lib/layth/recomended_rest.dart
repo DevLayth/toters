@@ -30,7 +30,7 @@ class recomended_rest extends StatelessWidget {
 
                 return Padding(
                   padding: const EdgeInsets.only(
-                      right: 20, left: 15, top: 30, bottom: 10),
+                      right: 20, left: 15, top: 15, bottom: 10),
                   child: Container(
                     width: 340,
                     color: Colors.white,
@@ -38,6 +38,7 @@ class recomended_rest extends StatelessWidget {
                         img: restaurant.image,
                         name: restaurant.name,
                         desc: restaurant.desc,
+                        rate: restaurant.rate,
                         diliver: restaurant.diliver.toString() +
                             " - " +
                             (restaurant.diliver + 10).toString()),

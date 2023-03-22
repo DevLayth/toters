@@ -26,6 +26,7 @@ Future<List<Restaurant>> fetchRestaurants() async {
       type: json['rtype'],
       desc: json['rdesc'],
       diliver: json['rdliver'],
+      rate: json['rate'],
       menu: menu,
     );
   }).toList();

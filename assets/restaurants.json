@@ -5,6 +5,7 @@
     "rtype":"food",
     "rdesc":"$$$ Fast Food",
     "rdliver":25,
+    "rate":3.5,
     "rmenu":[
     {
         "fid":1,"fname":"pizza","fprice":"8000"
@@ -27,6 +28,7 @@
     "rtype":"food",
     "rdesc":"$$ Fast Food",
     "rdliver":15,
+    "rate":4.1,
     "rmenu":[
     {
         "fid":1,"fname":"pizza","fprice":"8000"
@@ -49,6 +51,7 @@
     "rtype":"drink",
     "rdesc":"$$$ Coffee",
     "rdliver":18,
+    "rate":4.5,
     "rmenu":[
  
 ]
@@ -60,6 +63,7 @@
     "rtype":"food",
     "rdesc":"$ Fast Food",
     "rdliver":19,
+    "rate":4.8,
     "rmenu":[
     
 ]
@@ -71,6 +75,7 @@
     "rtype":"drink",
     "rdesc":"$$ Joices",
     "rdliver":25,
+    "rate":3.5,
     "rmenu":[
     
 ]

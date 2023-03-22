@@ -5,6 +5,7 @@ class Restaurant {
   final String type;
   final String desc;
   final int diliver;
+  final double rate;
   final List<MenuItem> menu;
 
   Restaurant(
@@ -14,7 +15,8 @@ class Restaurant {
       required this.type,
       required this.menu,
       required this.desc,
-      required this.diliver});
+      required this.diliver,
+      required this.rate});
 }
 
 class MenuItem {

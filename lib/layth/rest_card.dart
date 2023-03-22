@@ -6,19 +6,21 @@ class rest_card extends StatelessWidget {
   final String name;
   final String desc;
   final String diliver;
+  final double rate;
   const rest_card(
       {super.key,
       required this.img,
       required this.name,
       required this.desc,
-      required this.diliver});
+      required this.diliver,
+      required this.rate});
 
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
         Container(
-          height: 225,
+          height: 260,
           width: 370,
           color: Colors.white,
         ),
@@ -43,7 +45,7 @@ class rest_card extends StatelessWidget {
           ),
         ),
         Positioned(
-          bottom: 30,
+          bottom: 50,
           right: 15,
           child: Container(
             width: 90,
@@ -64,21 +66,75 @@ class rest_card extends StatelessWidget {
         ),
         Positioned(
             right: 30,
-            bottom: 55,
+            bottom: 70,
             child: Text(
               diliver,
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
             )),
-        Positioned(right: 42, bottom: 40, child: Text("mins")),
+        Positioned(right: 42, bottom: 55, child: Text("mins")),
         Positioned(
             left: 5,
-            bottom: 20,
+            bottom: 48,
             child: Text(name,
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18))),
         Positioned(
-            bottom: 0,
+            bottom: 30,
             left: 5,
-            child: Text(desc, style: TextStyle(fontSize: 15)))
+            child: Text(desc, style: TextStyle(fontSize: 13))),
+        Positioned(
+          bottom: 0,
+          left: 5,
+          child: Container(
+            height: 25,
+            width: 60,
+            decoration: BoxDecoration(
+                color: Color.fromARGB(20, 0, 0, 0),
+                borderRadius: BorderRadius.circular(7)),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Icon(
+                  Icons.star,
+                  color: Tcolor,
+                  size: 20,
+                ),
+                Text(
+                  rate.toString(),
+                  style: TextStyle(fontWeight: FontWeight.w900, fontSize: 14),
+                )
+              ],
+            ),
+          ),
+        ),
+        Positioned(
+          bottom: 0,
+          left: 80,
+          child: Container(
+            height: 25,
+            width: 120,
+            decoration: BoxDecoration(
+                color: Color.fromARGB(57, 77, 113, 230),
+                borderRadius: BorderRadius.circular(7)),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Icon(
+                  Icons.add_circle_outline,
+                  color: Colors.blue,
+                  size: 20,
+                ),
+                Text(
+                  "Earn Points",
+                  style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 14,
+                    color: Colors.blue,
+                  ),
+                )
+              ],
+            ),
+          ),
+        )
       ],
     );
   }
