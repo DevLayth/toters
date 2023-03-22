@@ -17,12 +17,16 @@ class _s1State extends State<s1> {
     return Scaffold(
       backgroundColor: Colors.white24,
       body: SafeArea(
-        child: Column(children: [
+        child: Column(  children: const [
           CustomAppbar(),
           Chip(
           backgroundColor: Color.fromARGB(255, 13,180,138),
             
-            label: Text("Restaurants"))
+            label: Text("Restaurants",
+            style: TextStyle(
+              color: Colors.black,
+              fontWeight: FontWeight.w600
+            ),))
         ],),
       ),
     );
