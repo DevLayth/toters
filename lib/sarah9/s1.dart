@@ -46,7 +46,7 @@ class _s1State extends State<s1> {
               padding: const EdgeInsets.only(left: 10.0),
               width: 30,
               decoration: BoxDecoration(
-                color: Color.fromARGB(96, 239, 236, 236),
+                color: Color.fromARGB(95, 185, 185, 185),
                 borderRadius: BorderRadius.circular(50),
 
               ),
