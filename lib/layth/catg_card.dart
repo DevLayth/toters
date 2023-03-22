@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:toters/aref/screen2.dart';
-import 'package:toters/layth/drinks_screen.dart';
+import 'package:toters/layth/add_founds_screen.dart';
+import 'package:toters/layth/catg_screen.dart';
 import 'package:toters/maryam/account_screen.dart';
 
 class catcard extends StatelessWidget {
@@ -13,31 +14,13 @@ class catcard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        if (i == 1) {
+        if (title == "Add Funds") {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => add_founds()));
+        } else {
           Navigator.push(context,
-              MaterialPageRoute(builder: (context) => Drinks_screen()));
-        } else if (i == 2) {
-          Navigator.push(context,
-              MaterialPageRoute(builder: (context) => Drinks_screen()));
-        } /*  else if (i == 2) {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (context) => screen2()));
-        } else if (i == 3) {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (context) => screen2()));
-        } else if (i == 4) {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (context) => screen2()));
-        } else if (i == 5) {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (context) => screen2()));
-        } else if (i == 6) {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (context) => screen2()));
-        } else if (i == 7) {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (context) => screen2()));
-        }*/
+              MaterialPageRoute(builder: (context) => catg_screen(Tit: title)));
+        }
       },
       child: Container(
         height: 85,
@@ -55,21 +38,22 @@ class catcard extends StatelessWidget {
             ),
           ],
         ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            Image.asset(
-              img,
-              height: 50,
-              width: 50,
-            ),
-            Text(
-              title,
-              style: TextStyle(
-                fontSize: 12,
+        child: Padding(
+          padding: const EdgeInsets.only(left: 11, right: 11),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Image.asset(
+                img,
+                height: 50,
+                width: 50,
               ),
-            ),
-          ],
+              Text(
+                title,
+                style: TextStyle(fontSize: 12, overflow: TextOverflow.ellipsis),
+              ),
+            ],
+          ),
         ),
       ),
     );
