@@ -19,6 +19,7 @@ class _s1State extends State<s1> {
           Row(children: [
             IconButton(onPressed: () {}, icon:const Icon(Icons.menu_rounded,)),
             Expanded(child: Container(
+              height: 30,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(50),
