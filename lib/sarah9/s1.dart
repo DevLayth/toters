@@ -25,6 +25,7 @@ class _s1State extends State<s1> {
 
               ),
               child: TextFormField(
+                decoration: InputDecoration(),
 
               ),
 
