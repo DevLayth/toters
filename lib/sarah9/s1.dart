@@ -17,7 +17,12 @@ class _s1State extends State<s1> {
       body: SafeArea(
         child: Column(children: [
           Row(children: [
-            IconButton(onPressed: () {}, icon:Icon(Icons.menu_rounded))
+            IconButton(onPressed: () {}, icon:const Icon(Icons.menu_rounded,)),
+            Expanded(child: Container(
+              decoration: BoxDecoration(
+                color: Colors.black,
+              ),
+            ))
 
 
 
