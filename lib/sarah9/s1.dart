@@ -29,6 +29,7 @@ class _s1State extends State<s1> {
                 decoration: InputDecoration(
                   hintText: "Serch for store or an item",
                   hintStyle: TextStyle(
+                    fontSize: 14,
                     
                   ),
                   enabledBorder: InputBorder.none,
