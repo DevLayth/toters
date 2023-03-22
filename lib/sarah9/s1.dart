@@ -24,7 +24,7 @@ SizedBox(
 ),
           Row(
             children: [
-              CategoryList(),
+              CategoryList(press: () {  }, title: "Restaurants",),
             ],
           )
         ],),
@@ -54,7 +54,7 @@ final VoidCallback press;
         padding:const
           EdgeInsets.symmetric(horizontal: 10.0,vertical: 10.0),
           child: Text(title,
-          style: TextStyle(
+          style:const TextStyle(
             color: Colors.black,
             fontWeight: FontWeight.w600),
             ),
