@@ -21,7 +21,7 @@ class _s1State extends State<s1> {
             Expanded(child: Container(
               height: 30,
               decoration: BoxDecoration(
-                color: Color.fromARGB(97, 219, 215, 215),
+                color: Color.fromARGB(96, 239, 236, 236),
                 borderRadius: BorderRadius.circular(50),
 
               ),
