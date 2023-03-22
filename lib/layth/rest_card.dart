@@ -36,7 +36,7 @@ class rest_card extends StatelessWidget {
               color: Tcolor, borderRadius: BorderRadius.circular(10)),
         ),
         Positioned(
-          right: 10,
+          right: 15,
           top: 10,
           child: Icon(
             Icons.favorite_border_outlined,

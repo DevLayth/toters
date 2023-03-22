@@ -30,7 +30,7 @@ List<catg> catg_data = [
   ),
   catg(
     img: "assets/catag/new.png",
-    title: "New",
+    title: "New on Toters",
     i: 4,
   ),
   catg(
@@ -45,7 +45,7 @@ List<catg> catg_data = [
   ),
   catg(
     img: "assets/catag/zaincash.jpg",
-    title: "Add Fun...",
+    title: "Add Funds",
     i: 7,
   )
 ];
