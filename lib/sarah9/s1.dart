@@ -13,7 +13,7 @@ class _s1State extends State<s1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.white24,
       body: SafeArea(
         child: Column(children: [
           Row(children: [
