@@ -76,7 +76,7 @@ class CustomAppbar extends StatelessWidget {
           height: 35,
           width: 60,
           decoration: BoxDecoration(
-            color: Color(0xD112CC1B),
+            color: Color.fromARGB(255,13, 180,138),
             borderRadius: BorderRadius.circular(50),
     
           ),
