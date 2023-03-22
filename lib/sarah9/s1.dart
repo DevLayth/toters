@@ -41,22 +41,25 @@ final String title;
 final VoidCallback press;
   @override
   Widget build(BuildContext context) {
-    return Chip(
-    backgroundColor: Color.fromARGB(255, 13,180,138),
-    shape: RoundedRectangleBorder(
-
-      borderRadius: BorderRadius.circular(10)
-    ),
-      
-      label:const Padding(
-      padding:
-        EdgeInsets.symmetric(horizontal: 10.0,vertical: 10.0),
-        child: Text("Restaurants",
-        style: TextStyle(
-          color: Colors.black,
-          fontWeight: FontWeight.w600),
+    return InkWell(
+      onTap: press,
+      child: Chip(
+      backgroundColor: Color.fromARGB(255, 13,180,138),
+      shape: RoundedRectangleBorder(
+    
+        borderRadius: BorderRadius.circular(10)
+      ),
+        
+        label:const Padding(
+        padding:
+          EdgeInsets.symmetric(horizontal: 10.0,vertical: 10.0),
+          child: Text("Restaurants",
+          style: TextStyle(
+            color: Colors.black,
+            fontWeight: FontWeight.w600),
+            ),
+        )
           ),
-      )
-        );
+    );
   }
 }
