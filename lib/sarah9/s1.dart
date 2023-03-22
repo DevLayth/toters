@@ -17,7 +17,9 @@ class _s1State extends State<s1> {
       body: SafeArea(
         child: Column(children: [
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.only(right: 10.0
+
+            ),
             child: Row(
               children: [
               IconButton(onPressed: () {}, icon:const Icon(Icons.menu_rounded,)),
