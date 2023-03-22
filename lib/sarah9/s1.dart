@@ -19,7 +19,7 @@ class _s1State extends State<s1> {
           Row(children: [
             IconButton(onPressed: () {}, icon:const Icon(Icons.menu_rounded,)),
             Expanded(child: Container(
-              height: 30,
+              height: 35,
               decoration: BoxDecoration(
                 color: Color.fromARGB(96, 239, 236, 236),
                 borderRadius: BorderRadius.circular(50),
