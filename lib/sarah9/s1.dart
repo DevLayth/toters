@@ -17,10 +17,13 @@ class _s1State extends State<s1> {
     return Scaffold(
       backgroundColor: Colors.white24,
       body: SafeArea(
-        child: Column(  children: const [
+        child: Column(  children: [
           CustomAppbar(),
           Chip(
           backgroundColor: Color.fromARGB(255, 13,180,138),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10)
+          ),
             
             label: Text("Restaurants",
             style: TextStyle(
