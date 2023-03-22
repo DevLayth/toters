@@ -75,6 +75,7 @@ class top_picks extends StatelessWidget {
                             child: Container(
                               width: 340,
                               child: rest_card(
+                                  id: restaurant.id,
                                   img: restaurant.image,
                                   name: restaurant.name,
                                   desc: restaurant.desc,

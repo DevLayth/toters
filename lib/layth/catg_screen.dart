@@ -56,6 +56,7 @@ class catg_screen extends StatelessWidget {
                           height: 260,
                           color: Colors.white,
                           child: rest_card(
+                              id: restaurant.id,
                               img: restaurant.image,
                               name: restaurant.name,
                               desc: restaurant.desc,

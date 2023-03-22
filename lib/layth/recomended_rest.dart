@@ -31,6 +31,7 @@ class recomended_rest extends StatelessWidget {
                     width: 340,
                     color: Colors.white,
                     child: rest_card(
+                        id: restaurant.id,
                         img: restaurant.image,
                         name: restaurant.name,
                         desc: restaurant.desc,
