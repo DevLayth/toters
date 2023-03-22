@@ -22,14 +22,19 @@ class _s1State extends State<s1> {
           Chip(
           backgroundColor: Color.fromARGB(255, 13,180,138),
           shape: RoundedRectangleBorder(
+
             borderRadius: BorderRadius.circular(10)
           ),
             
-            label: Text("Restaurants",
-            style: TextStyle(
-              color: Colors.black,
-              fontWeight: FontWeight.w600
-            ),))
+            label: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 15.0),
+              child: Text("Restaurants",
+              style: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.w600),
+                ),
+            )
+              )
         ],),
       ),
     );
