@@ -26,16 +26,22 @@ class _s1State extends State<s1> {
                 borderRadius: BorderRadius.circular(50),
 
               ),
-              child: TextFormField(
-                decoration: InputDecoration(
-                  hintText: "Serch for store or an item",
-                  hintStyle: TextStyle(
-                    fontSize: 14,
+              child: Row(
+                children: [
+                  Expanded(
+                    child: TextFormField(
+                      decoration:const InputDecoration(
+                        hintText: "Serch for store or an item",
+                        hintStyle: TextStyle(
+                          fontSize: 14,
+                        ),
+                        enabledBorder: InputBorder.none,
+                        focusedBorder: InputBorder.none,
+                      ),
+                  
+                    ),
                   ),
-                  enabledBorder: InputBorder.none,
-                  focusedBorder: InputBorder.none,
-                ),
-
+                ],
               ),
 
             ))
