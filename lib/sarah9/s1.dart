@@ -22,23 +22,27 @@ class _s1State extends State<s1> {
 SizedBox(
   height: 20,
 ),
-          Chip(
-          backgroundColor: Color.fromARGB(255, 13,180,138),
-          shape: RoundedRectangleBorder(
+          Row(
+            children: [
+              Chip(
+              backgroundColor: Color.fromARGB(255, 13,180,138),
+              shape: RoundedRectangleBorder(
 
-            borderRadius: BorderRadius.circular(10)
-          ),
-            
-            label:const Padding(
-            padding:
-              EdgeInsets.symmetric(horizontal: 10.0,vertical: 10.0),
-              child: Text("Restaurants",
-              style: TextStyle(
-                color: Colors.black,
-                fontWeight: FontWeight.w600),
-                ),
-            )
-              )
+                borderRadius: BorderRadius.circular(10)
+              ),
+                
+                label:const Padding(
+                padding:
+                  EdgeInsets.symmetric(horizontal: 10.0,vertical: 10.0),
+                  child: Text("Restaurants",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.w600),
+                    ),
+                )
+                  ),
+            ],
+          )
         ],),
       ),
     );
