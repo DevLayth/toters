@@ -24,7 +24,10 @@ SizedBox(
 ),
           Row(
             children: [
-              CategoryList(press: () {  }, title: "Restaurants",),
+              CategoryList(press: () {  }, 
+              title: "Restaurants",),
+                CategoryList(press: () {  }, 
+              title: "Restaurants",),
             ],
           )
         ],),
