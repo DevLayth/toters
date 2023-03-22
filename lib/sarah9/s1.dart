@@ -18,7 +18,8 @@ class _s1State extends State<s1> {
       backgroundColor: Colors.white24,
       body: SafeArea(
         child: Column(children: [
-          CustomAppbar()
+          CustomAppbar(),
+          Chip(label: Text("Restaurants"))
         ],),
       ),
     );
