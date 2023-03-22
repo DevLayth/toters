@@ -56,7 +56,7 @@ class CustomAppbar extends StatelessWidget {
             children: [
               Expanded(
                 child: TextFormField(
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 16,
                   ),
                   decoration:const InputDecoration(
