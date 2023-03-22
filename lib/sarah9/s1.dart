@@ -26,8 +26,8 @@ class _s1State extends State<s1> {
             borderRadius: BorderRadius.circular(10)
           ),
             
-            label: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 15.0),
+            label:const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10.0,vertical: 10.0),
               child: Text("Restaurants",
               style: TextStyle(
                 color: Colors.black,
