@@ -35,9 +35,10 @@ SizedBox(
 
 class CategoryList extends StatelessWidget {
   const CategoryList({
-    super.key,
+    super.key, required this.title, required this.press,
   });
-
+final String title;
+final VoidCallback press;
   @override
   Widget build(BuildContext context) {
     return Chip(
