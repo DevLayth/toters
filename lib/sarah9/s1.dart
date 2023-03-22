@@ -40,7 +40,18 @@ class _s1State extends State<s1> {
                       ),
                   
                     ),
+
                   ),
+                  Container(
+              padding: const EdgeInsets.only(left: 10.0),
+              height: 35,
+              decoration: BoxDecoration(
+                color: Color.fromARGB(96, 239, 236, 236),
+                borderRadius: BorderRadius.circular(50),
+
+              ),
+              )
+
                 ],
               ),
 
