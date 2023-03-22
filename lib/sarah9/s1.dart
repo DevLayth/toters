@@ -13,37 +13,77 @@ class _s1State extends State<s1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(elevation: 0.0,
-    leading: Icon(Icons.sort),
-    actions: [
-      
-    ],
-
-
-
-    ),
-    body: Column(children: [
-      TextField(
-        decoration: InputDecoration(
-          hintText: "Search for store or an item",
-          hintStyle: TextStyle(color: Colors.white),
-          prefixIcon: Icon(Icons.search,color: Colors.white,),
-          filled: true,
-          fillColor: Color(0xff3a3e3e),
-          border: OutlineInputBorder(
-            borderSide: BorderSide.none,
-            borderRadius: BorderRadius.circular(10))
-        ),
+      backgroundColor: Colors.white24,
+      body: SafeArea(
+        child: Column(children: [
+          CustomAppbar()
+        ],),
       ),
-Container(
-  height: 80,
-  width: 80,
-  decoration: BoxDecoration(
-    color: Colors.grey,
-    borderRadius: BorderRadius.circular(10)
-  ),
-),
-    ]),
+    );
+  }
+}
+
+class CustomAppbar extends StatelessWidget {
+  const CustomAppbar({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(right: 10.0
+
+      ),
+      child: Row(
+        children: [
+        IconButton(onPressed: () {}, icon:const Icon(Icons.menu_rounded,)),
+        Expanded(child: Container(
+          padding: const EdgeInsets.only(left: 10.0),
+          height: 35,
+          decoration: BoxDecoration(
+            color: Color.fromARGB(96, 239, 236, 236),
+            borderRadius: BorderRadius.circular(50),
+    
+          ),
+          child: Row(
+            children: [
+              Expanded(
+                child: TextFormField(
+                  decoration:const InputDecoration(
+                    hintText: "Serch for store or an item",
+                    hintStyle: TextStyle(
+                      fontSize: 14,
+                    ),
+                    enabledBorder: InputBorder.none,
+                    focusedBorder: InputBorder.none,
+                  ),
+              
+                ),
+    
+              ),
+              Container(
+          padding: const EdgeInsets.only(left: 10.0),
+          height: 35,
+          width: 60,
+          decoration: BoxDecoration(
+            color: Color(0xD112CC1B),
+            borderRadius: BorderRadius.circular(50),
+    
+          ),
+          child: Icon(
+            Icons.search,color:Colors.black87,),
+          )
+    
+            ],
+          ),
+    
+        ))
+    
+    
+    
+    
+        
+      ],),
     );
   }
 }
