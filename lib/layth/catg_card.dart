@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toters/aref/screen2.dart';
-import 'package:toters/layth/add_founds_screen.dart';
 import 'package:toters/layth/catg_screen.dart';
-import 'package:toters/maryam/account_screen.dart';
 
 class catcard extends StatelessWidget {
   final String img;
@@ -14,10 +11,7 @@ class catcard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        if (title == "Add Funds") {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (context) => add_founds()));
-        } else {
+        {
           Navigator.push(context,
               MaterialPageRoute(builder: (context) => catg_screen(Tit: title)));
         }
