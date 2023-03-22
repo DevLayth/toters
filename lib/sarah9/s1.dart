@@ -57,7 +57,7 @@ class CustomAppbar extends StatelessWidget {
               Expanded(
                 child: TextFormField(
                   style: TextStyle(
-                    fontSize: 14,
+                    fontSize: 10,
                   ),
                   decoration:const InputDecoration(
                     hintText: "Serch for store or an item",
