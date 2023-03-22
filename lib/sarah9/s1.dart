@@ -31,7 +31,7 @@ SizedBox(
                 CategoryList(press: () {  }, 
               title: "Pasta shop",),
                 CategoryList(press: () {  }, 
-              title: "Restaurants",),
+              title: "Salad shop",),
             ],
           )
         ],),
