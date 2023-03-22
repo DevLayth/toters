@@ -40,7 +40,7 @@ class CustomAppbar extends StatelessWidget {
         )
         ),
         SizedBox(
-          width: MediaQuery.of(context).size.width*0.01,
+          width: MediaQuery.of(context).size.width*0.2,
         ),
 
         Expanded(child: Container(
