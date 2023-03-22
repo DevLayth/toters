@@ -16,55 +16,59 @@ class _s1State extends State<s1> {
       backgroundColor: Colors.white24,
       body: SafeArea(
         child: Column(children: [
-          Row(children: [
-            IconButton(onPressed: () {}, icon:const Icon(Icons.menu_rounded,)),
-            Expanded(child: Container(
-              padding: const EdgeInsets.only(left: 10.0),
-              height: 35,
-              decoration: BoxDecoration(
-                color: Color.fromARGB(96, 239, 236, 236),
-                borderRadius: BorderRadius.circular(50),
-
-              ),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: TextFormField(
-                      decoration:const InputDecoration(
-                        hintText: "Serch for store or an item",
-                        hintStyle: TextStyle(
-                          fontSize: 14,
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              children: [
+              IconButton(onPressed: () {}, icon:const Icon(Icons.menu_rounded,)),
+              Expanded(child: Container(
+                padding: const EdgeInsets.only(left: 10.0),
+                height: 35,
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(96, 239, 236, 236),
+                  borderRadius: BorderRadius.circular(50),
+          
+                ),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: TextFormField(
+                        decoration:const InputDecoration(
+                          hintText: "Serch for store or an item",
+                          hintStyle: TextStyle(
+                            fontSize: 14,
+                          ),
+                          enabledBorder: InputBorder.none,
+                          focusedBorder: InputBorder.none,
                         ),
-                        enabledBorder: InputBorder.none,
-                        focusedBorder: InputBorder.none,
+                    
                       ),
-                  
+          
                     ),
-
-                  ),
-                  Container(
-              padding: const EdgeInsets.only(left: 10.0),
-              height: 35,
-              width: 60,
-              decoration: BoxDecoration(
-                color: Color.fromARGB(95, 185, 185, 185),
-                borderRadius: BorderRadius.circular(50),
-
-              ),
-              child: Icon(
-                Icons.search,color:Colors.black87,),
-              )
-
-                ],
-              ),
-
-            ))
-
-
-
-
-            
-          ],)
+                    Container(
+                padding: const EdgeInsets.only(left: 10.0),
+                height: 35,
+                width: 60,
+                decoration: BoxDecoration(
+                  color: Color(0xD112CC1B),
+                  borderRadius: BorderRadius.circular(50),
+          
+                ),
+                child: Icon(
+                  Icons.search,color:Colors.black87,),
+                )
+          
+                  ],
+                ),
+          
+              ))
+          
+          
+          
+          
+              
+            ],),
+          )
         ],),
       ),
     );
