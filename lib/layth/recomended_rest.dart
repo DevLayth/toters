@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:toters/colors.dart';
 import 'package:toters/layth/rest_card.dart';
 import 'package:toters/layth/resturant_data_fetch.dart';
-import 'package:toters/maryam/account_screen.dart';
 
 import 'data_classes.dart';
 
