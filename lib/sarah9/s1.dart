@@ -19,6 +19,9 @@ class _s1State extends State<s1> {
       body: SafeArea(
         child: Column(  children: [
           CustomAppbar(),
+SizedBox(
+  height: 20,
+),
           Chip(
           backgroundColor: Color.fromARGB(255, 13,180,138),
           shape: RoundedRectangleBorder(
@@ -27,7 +30,8 @@ class _s1State extends State<s1> {
           ),
             
             label:const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 10.0,vertical: 10.0),
+            padding:
+              EdgeInsets.symmetric(horizontal: 10.0,vertical: 10.0),
               child: Text("Restaurants",
               style: TextStyle(
                 color: Colors.black,
