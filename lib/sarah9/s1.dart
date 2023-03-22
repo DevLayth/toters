@@ -40,7 +40,7 @@ class CustomAppbar extends StatelessWidget {
         )
         ),
         SizedBox(
-          width: MediaQuery.of(context).size.width*0.2,
+          width: MediaQuery.of(context).size.width*0.1,
         ),
 
         Expanded(child: Container(
@@ -56,10 +56,13 @@ class CustomAppbar extends StatelessWidget {
             children: [
               Expanded(
                 child: TextFormField(
+                  style: TextStyle(
+                    fontSize: 14,
+                  ),
                   decoration:const InputDecoration(
                     hintText: "Serch for store or an item",
                     hintStyle: TextStyle(
-                      fontSize: 14,
+                      fontSize: 15,
                     ),
                     enabledBorder: InputBorder.none,
                     focusedBorder: InputBorder.none,
