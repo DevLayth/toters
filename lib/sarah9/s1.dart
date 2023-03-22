@@ -19,6 +19,7 @@ class _s1State extends State<s1> {
           Row(children: [
             IconButton(onPressed: () {}, icon:const Icon(Icons.menu_rounded,)),
             Expanded(child: Container(
+              padding: const EdgeInsets.only(left: 10.0),
               height: 35,
               decoration: BoxDecoration(
                 color: Color.fromARGB(96, 239, 236, 236),
@@ -30,7 +31,6 @@ class _s1State extends State<s1> {
                   hintText: "Serch for store or an item",
                   hintStyle: TextStyle(
                     fontSize: 14,
-                    
                   ),
                   enabledBorder: InputBorder.none,
                   focusedBorder: InputBorder.none,
