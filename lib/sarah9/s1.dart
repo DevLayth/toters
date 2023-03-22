@@ -50,10 +50,10 @@ final VoidCallback press;
         borderRadius: BorderRadius.circular(10)
       ),
         
-        label:const Padding(
-        padding:
+        label: Padding(
+        padding:const
           EdgeInsets.symmetric(horizontal: 10.0,vertical: 10.0),
-          child: Text("Restaurants",
+          child: Text(title,
           style: TextStyle(
             color: Colors.black,
             fontWeight: FontWeight.w600),
