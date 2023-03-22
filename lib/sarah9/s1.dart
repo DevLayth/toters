@@ -36,8 +36,15 @@ class CustomAppbar extends StatelessWidget {
       ),
       child: Row(
         children: [
-        IconButton(onPressed: () {}, icon:const Icon(Icons.menu_rounded,)),
+        IconButton(onPressed: () {}, icon:const Icon(Icons.menu_rounded,
+        )
+        ),
+        SizedBox(
+          width: MediaQuery.of(context).size.width*0.01,
+        ),
+
         Expanded(child: Container(
+
           padding: const EdgeInsets.only(left: 10.0),
           height: 35,
           decoration: BoxDecoration(
