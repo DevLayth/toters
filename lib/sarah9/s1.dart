@@ -50,6 +50,7 @@ class _s1State extends State<s1> {
                 borderRadius: BorderRadius.circular(50),
 
               ),
+              child: Icon(Icons.search),
               )
 
                 ],
