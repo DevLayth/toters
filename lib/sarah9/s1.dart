@@ -27,7 +27,8 @@ class _s1State extends State<s1> {
               ),
               child: TextFormField(
                 decoration: InputDecoration(
-                  hintText: "Serch for store or an item"
+                  hintText: "Serch for store or an item",
+                  enabledBorder: InputBorder.none
                 ),
 
               ),
