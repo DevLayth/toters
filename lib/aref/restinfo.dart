@@ -2,8 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
-class MyWidget extends StatelessWidget {
-  const MyWidget({super.key});
+class menu_card extends StatelessWidget {
+  final String pic;
+  final String name;
+  final String desc;
+  final double price;
+  const menu_card(
+      {super.key,
+      required this.desc,
+      required this.name,
+      required this.pic,
+      required this.price});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +22,7 @@ class MyWidget extends StatelessWidget {
           SizedBox(
             width: 100,
             height: 100,
-            child: Image.asset("assets/offers/offer1.png"),
+            child: Image.asset(pic),
           ),
           const SizedBox(width: 10),
           Expanded(
@@ -22,10 +31,10 @@ class MyWidget extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Padding(
+                  Padding(
                     padding: EdgeInsets.symmetric(vertical: 0),
                     child: Text(
-                      "food name",
+                      name,
                       style:
                           TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),
@@ -33,7 +42,7 @@ class MyWidget extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        "food desc",
+                        desc,
                         style: TextStyle(fontSize: 16),
                       ),
                     ],
@@ -41,7 +50,7 @@ class MyWidget extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        "price",
+                        price.toString(),
                         style: TextStyle(
                             color: Color.fromARGB(255, 9, 143, 14),
                             fontSize: 16),

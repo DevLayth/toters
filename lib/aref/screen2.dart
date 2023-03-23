@@ -4,63 +4,38 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:toters/aref/restaurant_info.dart';
 import 'package:toters/aref/restinfo.dart';
+import 'package:toters/aref/resturant_card.dart';
 import 'package:toters/layth/catg_card.dart';
 import 'package:toters/layth/data_classes.dart';
 
+import '../layth/resturant_data_fetch.dart';
 import 'menu_card.dart';
 
-class Foodpage extends StatefulWidget {
-  const Foodpage({super.key});
+class Foodpage extends StatelessWidget {
+  final int id;
+  const Foodpage({super.key, required this.id});
 
-  @override
-  State<Foodpage> createState() => _FoodpageState();
-}
-
-var selected = 0;
-final rest = Restaurant;
-
-class _FoodpageState extends State<Foodpage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: CustomScrollView(
-        slivers: [
-          SliverAppBar(
-            expandedHeight: 200,
-            flexibleSpace: FlexibleSpaceBar(
-              background: Image.asset(
-                "assets/rest/texas.png",
-                fit: BoxFit.cover,
-              ),
-            ),
-            leading: Padding(
-              padding: const EdgeInsets.only(left: 16),
-              child: CircleAvatar(
-                backgroundColor: Colors.white,
-              ),
-            ),
-            actions: [
-              CircleAvatar(
-                backgroundColor: Colors.white,
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: CircleAvatar(
-                  backgroundColor: Colors.white,
-                ),
-              ),
-              CircleAvatar(
-                backgroundColor: Colors.white,
-              ),
-            ],
-          ),
-          SliverToBoxAdapter(
-            child: RestaurantInfo(),
-          ),
-          SliverToBoxAdapter(
-            child: MyWidget(),
-          ),
-        ],
+      body: FutureBuilder<List<Restaurant>>(
+        future: fetchRestaurants(),
+        builder: (context, snapshot) {
+          if (snapshot.hasData) {
+            final restaurants = snapshot.data!.toList();
+
+            return Column(
+              children: [
+                resturant_card(pic: restaurants[id].image),
+                // menu_card(desc: restaurants[id].menu[id].name, name: name, pic: pic, price: price)
+              ],
+            );
+          } else if (snapshot.hasError) {
+            return Center(child: Text('${snapshot.error}'));
+          } else {
+            return Center(child: CircularProgressIndicator());
+          }
+        },
       ),
     );
   }
