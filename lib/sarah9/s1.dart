@@ -23,6 +23,7 @@ SizedBox(
   height: 20,
 ),
           Container(
+            height: 60,
             child: Row(
               children: [
                 CategoryList(press: () {  }, 
