@@ -16,19 +16,6 @@ class _s1State extends State<s1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white24,
-      body: SafeArea(
-        child: ListView(  children: [
-          CustomAppbar(),
-          SizedBox(
-          height: 20,
-),
-          CategoryCard()
-          
-
-
-        ],),
-      ),
     );
   }
 }
