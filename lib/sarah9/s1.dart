@@ -20,25 +20,13 @@ class _s1State extends State<s1> {
       body: SafeArea(
         child: ListView(  children: [
           CustomAppbar(),
-SizedBox(
-  height: 20,
+          SizedBox(
+          height: 20,
 ),
-          Container(
-            height: 60,
-            child: ListView(
-              scrollDirection: Axis.horizontal,
-              children: [
-                CategoryList(press: () {  }, 
-                title: "Restaurants",),
-                  CategoryList(press: () {  }, 
-                title: "Coffee shop",),
-                  CategoryList(press: () {  }, 
-                title: "Pasta shop",),
-                  CategoryList(press: () {  }, 
-                title: "Salad shop",),
-              ],
-            ),
-          )
+          CategoryCard()
+          
+
+
         ],),
       ),
     );
