@@ -17,22 +17,24 @@ class _s1State extends State<s1> {
     return Scaffold(
       backgroundColor: Colors.white24,
       body: SafeArea(
-        child: Column(  children: [
+        child: ListView(  children: [
           CustomAppbar(),
 SizedBox(
   height: 20,
 ),
-          Row(
-            children: [
-              CategoryList(press: () {  }, 
-              title: "Restaurants",),
+          Container(
+            child: Row(
+              children: [
                 CategoryList(press: () {  }, 
-              title: "Coffee shop",),
-                CategoryList(press: () {  }, 
-              title: "Pasta shop",),
-                CategoryList(press: () {  }, 
-              title: "Salad shop",),
-            ],
+                title: "Restaurants",),
+                  CategoryList(press: () {  }, 
+                title: "Coffee shop",),
+                  CategoryList(press: () {  }, 
+                title: "Pasta shop",),
+                  CategoryList(press: () {  }, 
+                title: "Salad shop",),
+              ],
+            ),
           )
         ],),
       ),
