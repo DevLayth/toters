@@ -16,6 +16,12 @@ class _s1State extends State<s1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold( 
+      body: Padding(padding: const EdgeInsets.only(top: 100),
+      child: Column(
+        children:const  [
+          TextField(),
+        ],
+      ),),
     );
   }
 }
