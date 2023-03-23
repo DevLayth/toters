@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class RestaurantInfo extends StatelessWidget {
-  const RestaurantInfo({
-    Key? key,
-  }) : super(key: key);
+  final String pic;
+  final String name;
+  final String desc;
+  RestaurantInfo(
+      {super.key, required this.desc, required this.name, required this.pic});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +19,6 @@ class RestaurantInfo extends StatelessWidget {
           children: [
             Text(
               "Mayfield Bakery & Cafe",
-              style: Theme.of(context).textTheme.headline6,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 8),

@@ -23,7 +23,11 @@ class rest_card extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => Foodpage()));
+            context,
+            MaterialPageRoute(
+                builder: (context) => Foodpage(
+                      id: id,
+                    )));
       },
       child: Stack(
         children: [
