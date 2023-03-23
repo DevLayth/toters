@@ -24,7 +24,8 @@ SizedBox(
 ),
           Container(
             height: 60,
-            child: Row(
+            child: ListView(
+              
               children: [
                 CategoryList(press: () {  }, 
                 title: "Restaurants",),
