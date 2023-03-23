@@ -25,7 +25,7 @@ SizedBox(
           Container(
             height: 60,
             child: ListView(
-              
+              scrollDirection: Axis.horizontal,
               children: [
                 CategoryList(press: () {  }, 
                 title: "Restaurants",),
