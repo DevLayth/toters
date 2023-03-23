@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-import 'Category_List.dart';
-import 'custom_appbar.dart';
+
+
 
 class s1 extends StatefulWidget {
   const s1({super.key});
@@ -15,7 +15,7 @@ class s1 extends StatefulWidget {
 class _s1State extends State<s1> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold( 
     );
   }
 }
