@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toters/layth/butler_screen.dart';
 import 'package:toters/layth/catg_screen.dart';
 
 class catcard extends StatelessWidget {
@@ -11,7 +12,10 @@ class catcard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        {
+        if (title == "Butler") {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => butler_screen()));
+        } else {
           Navigator.push(context,
               MaterialPageRoute(builder: (context) => catg_screen(Tit: title)));
         }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:toters/aref/screen2.dart';
 import 'package:toters/colors.dart';
+import 'package:toters/layth/butler_screen.dart';
 import 'package:toters/layth/home_screen.dart';
 import 'package:toters/maryam/account_screen.dart';
 import 'package:toters/maryam/order_screen.dart';
@@ -19,7 +20,7 @@ class _MyNavBarState extends State<MyNavBar> {
   static List<Widget> _widgetOptions = <Widget>[
     home_screen(),
     s1(),
-    acoount_screen(),
+    butler_screen(),
     order_screen(),
     acoount_screen(),
   ];
