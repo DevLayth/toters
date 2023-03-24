@@ -106,16 +106,32 @@
     "rate":3.5,
     "rmenu":[
         {
-            "fid":0,"fname":"cryspy","fprice":3500 ,"img":"assets/food/2.png" ,"desc":"" 
+            "fid":0,"fname":"Morocco","fprice":2000 ,"img":"assets/food/ojmorocco.jpg" ,"desc":"" 
+        },
+       
+        {
+            "fid":1,"fname":"Avocado","fprice":2000 ,"img":"assets/food/ojavocado.jpg"  ,"desc":"Juice"  
         },
         {
-            "fid":1,"fname":"pizza","fprice":8000 ,"img":"assets/food/2.png"  ,"desc":""  
+            "fid":2,"fname":"Banana","fprice":1000 ,"img":"assets/food/ojbanana.jpg" ,"desc":""  
         },
         {
-            "fid":2,"fname":"burger","fprice":4500 ,"img":"assets/food/2.png" ,"desc":""  
+            "fid":3,"fname":"Carrot","fprice":2000 ,"img":"assets/food/ojcarrot.jpg" ,"desc":"" 
         },
         {
-            "fid":3,"fname":"falafel","fprice":2500 ,"img":"assets/food/2.png" ,"desc":"" 
+            "fid":4,"fname":"Coconut","fprice":3000 ,"img":"assets/food/ojcoconut.jpg" ,"desc":"" 
+        },
+        {
+            "fid":5,"fname":"King","fprice":2000 ,"img":"assets/food/ojking.jpg" ,"desc":"" 
+        },
+        {
+            "fid":6,"fname":"Apple","fprice":1500 ,"img":"assets/food/ojapple.jpg" ,"desc":"Juice" 
+        },
+        {
+            "fid":7,"fname":"Pomegranate","fprice":2000 ,"img":"assets/food/ojpomegranate.jpg" ,"desc":"" 
+        },
+        {
+            "fid":3,"fname":"Swiss","fprice":2000 ,"img":"assets/food/ojswiss.jpg" ,"desc":"" 
         }
         
     ]
