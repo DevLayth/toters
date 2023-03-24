@@ -8,16 +8,19 @@
     "rate":3.5,
     "rmenu":[
     {
-        "fid":1,"fname":"pizza","fprice":"8000"
+        "fid":0,"fname":"pizza","fprice":8000  ,"img":"assets/food/2.png" ,"desc":"" 
     },
     {
-        "fid":2,"fname":"burger","fprice":"4000"
+        "fid":1,"fname":"pizza","fprice":8000  ,"img":"assets/food/2.png" ,"desc":"" 
     },
     {
-        "fid":3,"fname":"falafel","fprice":"2500"
+        "fid":2,"fname":"burger","fprice":4000 ,"img":"assets/food/2.png" ,"desc":"" 
     },
     {
-        "fid":4,"fname":"cryspy","fprice":"3500"
+        "fid":3,"fname":"falafel","fprice":2500 ,"img":"assets/food/2.png" ,"desc":"" 
+    },
+    {
+        "fid":4,"fname":"cryspy","fprice":3500 ,"img":"assets/food/2.png"  ,"desc":"" 
     }
 ]
 },
@@ -31,17 +34,18 @@
     "rate":4.1,
     "rmenu":[
     {
-        "fid":1,"fname":"pizza","fprice":"8000"
+        "fid":0,"fname":"cryspy","fprice":3500 ,"img":"assets/food/2.png" ,"desc":"" 
     },
     {
-        "fid":2,"fname":"burger","fprice":"4000"
+        "fid":1,"fname":"pizza","fprice":8000 ,"img":"assets/food/2.png"  ,"desc":""  
     },
     {
-        "fid":3,"fname":"falafel","fprice":"2500"
+        "fid":2,"fname":"burger","fprice":4500 ,"img":"assets/food/2.png" ,"desc":""  
     },
     {
-        "fid":4,"fname":"cryspy","fprice":"3500"
+        "fid":3,"fname":"falafel","fprice":2500 ,"img":"assets/food/2.png" ,"desc":"" 
     }
+    
 ]
 },
 {
@@ -53,8 +57,20 @@
     "rdliver":18,
     "rate":4.5,
     "rmenu":[
- 
-]
+        {
+            "fid":0,"fname":"cryspy","fprice":3500 ,"img":"assets/food/2.png" ,"desc":"" 
+        },
+        {
+            "fid":1,"fname":"pizza","fprice":8000 ,"img":"assets/food/2.png"  ,"desc":""  
+        },
+        {
+            "fid":2,"fname":"burger","fprice":4500 ,"img":"assets/food/2.png" ,"desc":""  
+        },
+        {
+            "fid":3,"fname":"falafel","fprice":2500 ,"img":"assets/food/2.png" ,"desc":"" 
+        }
+        
+    ]
 },
 {
     "rid":3,
@@ -65,8 +81,20 @@
     "rdliver":19,
     "rate":4.8,
     "rmenu":[
-    
-]
+        {
+            "fid":0,"fname":"cryspy","fprice":3500 ,"img":"assets/food/2.png" ,"desc":"" 
+        },
+        {
+            "fid":1,"fname":"pizza","fprice":8000 ,"img":"assets/food/2.png"  ,"desc":""  
+        },
+        {
+            "fid":2,"fname":"burger","fprice":4500 ,"img":"assets/food/2.png" ,"desc":""  
+        },
+        {
+            "fid":3,"fname":"falafel","fprice":2500 ,"img":"assets/food/2.png" ,"desc":"" 
+        }
+        
+    ]
 },
 {
     "rid":4,
@@ -77,8 +105,20 @@
     "rdliver":25,
     "rate":3.5,
     "rmenu":[
-    
-]
+        {
+            "fid":0,"fname":"cryspy","fprice":3500 ,"img":"assets/food/2.png" ,"desc":"" 
+        },
+        {
+            "fid":1,"fname":"pizza","fprice":8000 ,"img":"assets/food/2.png"  ,"desc":""  
+        },
+        {
+            "fid":2,"fname":"burger","fprice":4500 ,"img":"assets/food/2.png" ,"desc":""  
+        },
+        {
+            "fid":3,"fname":"falafel","fprice":2500 ,"img":"assets/food/2.png" ,"desc":"" 
+        }
+        
+    ]
 }
 
 ]

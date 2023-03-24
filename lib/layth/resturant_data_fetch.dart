@@ -16,6 +16,8 @@ Future<List<Restaurant>> fetchRestaurants() async {
         id: menuJson['fid'],
         name: menuJson['fname'],
         price: menuJson['fprice'],
+        img: menuJson['img'],
+        desc: menuJson['desc'],
       );
     }).toList();
 

@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class Restaurant {
   final int id;
   final String name;
@@ -22,11 +24,15 @@ class Restaurant {
 class MenuItem {
   final int id;
   final String name;
-  final String price;
+  final int price;
+  final String img;
+  final String desc;
 
   MenuItem({
     required this.id,
     required this.name,
     required this.price,
+    required this.img,
+    required this.desc,
   });
 }
