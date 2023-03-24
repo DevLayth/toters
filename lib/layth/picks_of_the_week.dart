@@ -65,10 +65,10 @@ class picks_week_list extends StatelessWidget {
                                       const EdgeInsets.only(top: 20, right: 10),
                                   child: Container(
                                     child: circle_food(
-                                      name: restaurants[index].menu[1].name,
+                                      name: restaurants[index].menu[0].name,
                                       rest: restaurants[index].name,
-                                      price: restaurants[index].menu[1].price,
-                                      img: restaurants[index].menu[1].img,
+                                      price: restaurants[index].menu[0].price,
+                                      img: restaurants[index].menu[0].img,
                                     ),
                                   ),
                                 );
