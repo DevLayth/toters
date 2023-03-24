@@ -9,7 +9,6 @@ import 'package:toters/layth/catg_card.dart';
 import 'package:toters/layth/data_classes.dart';
 
 import '../layth/resturant_data_fetch.dart';
-import 'menu_card.dart';
 
 class Foodpage extends StatelessWidget {
   final int id;
@@ -26,7 +25,10 @@ class Foodpage extends StatelessWidget {
 
             return Column(
               children: [
-                resturant_card(pic: restaurants[id].image),
+                resturant_card(
+                    pic: restaurants[id].image,
+                    name: restaurants[id].name,
+                    desc: restaurants[id].desc),
                 // menu_card(desc: restaurants[id].menu[id].name, name: name, pic: pic, price: price)
               ],
             );

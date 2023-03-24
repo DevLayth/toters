@@ -5,17 +5,95 @@ import 'package:toters/colors.dart';
 
 class resturant_card extends StatelessWidget {
   final String pic;
-  const resturant_card({super.key, required this.pic});
+  final String name;
+  final String desc;
+  const resturant_card(
+      {super.key, required this.pic, required this.desc, required this.name});
 
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Image.asset(
-          pic,
-          fit: BoxFit.fitWidth,
+        Container(
+          height: 400,
+          color: Color.fromARGB(255, 255, 255, 255),
         ),
-        Positioned(bottom: 0, child: Text("data"))
+        Positioned(
+          top: 0,
+          child: Image.asset(
+            pic,
+            height: 300,
+            width: 500,
+            fit: BoxFit.fitWidth,
+          ),
+        ),
+        Positioned(
+            bottom: 70,
+            left: 20,
+            child: Text(
+              name,
+              style: TextStyle(fontSize: 24),
+            )),
+        Positioned(
+            bottom: 40,
+            left: 20,
+            child: Text(
+              desc,
+              style: TextStyle(fontSize: 18, color: Colors.grey),
+            )),
+        Positioned(
+          top: 10,
+          left: 20,
+          child: GestureDetector(
+            onTap: () {
+              Navigator.pop(context);
+            },
+            child: CircleAvatar(
+              radius: 15,
+              backgroundColor: Colors.white,
+              child: Icon(
+                Icons.arrow_back,
+                color: Color.fromARGB(255, 0, 0, 0),
+              ),
+            ),
+          ),
+        ),
+        Positioned(
+          top: 10,
+          right: 120,
+          child: CircleAvatar(
+            radius: 15,
+            backgroundColor: Colors.white,
+            child: Icon(
+              Icons.favorite,
+              color: Color.fromARGB(255, 117, 1, 1),
+            ),
+          ),
+        ),
+        Positioned(
+          top: 10,
+          right: 70,
+          child: CircleAvatar(
+            radius: 15,
+            backgroundColor: Colors.white,
+            child: Icon(
+              Icons.share,
+              color: Color.fromARGB(255, 0, 0, 0),
+            ),
+          ),
+        ),
+        Positioned(
+          top: 10,
+          right: 20,
+          child: CircleAvatar(
+            radius: 15,
+            backgroundColor: Colors.white,
+            child: Icon(
+              Icons.search,
+              color: Color.fromARGB(255, 0, 0, 0),
+            ),
+          ),
+        ),
       ],
     );
   }
