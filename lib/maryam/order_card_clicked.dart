@@ -54,10 +54,10 @@ class order_card_clicked extends StatelessWidget {
                         ),
                       ),
                       Positioned(
-                        top: 20,
-                        left: 20,
+                        top: 30,
+                        left: 8,
                         child: CircleAvatar(
-                          radius: 40.0,
+                          radius: 30.0,
                           backgroundImage: AssetImage(
                             img,
                           ),
@@ -65,25 +65,25 @@ class order_card_clicked extends StatelessWidget {
                       ),
                       Positioned(
                           top: 35,
-                          left: 110,
+                          left: 75,
                           child: Text(
                             name,
                             style: TextStyle(
-                                fontSize: 20, fontWeight: FontWeight.bold),
+                                fontSize: 18, fontWeight: FontWeight.bold),
                           )),
                       Positioned(
-                          top: 65,
-                          left: 110,
+                          top: 60,
+                          left: 75,
                           child: Text(
                             "Delivered on :" + date,
                             style: TextStyle(
-                                fontSize: 15,
+                                fontSize: 14,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black45),
                           )),
                       Positioned(
-                        top: 40,
-                        right: 20,
+                        top: 35,
+                        right: 8,
                         child: Icon(
                           Icons.chevron_right_outlined,
                           color: Tcolor,
@@ -165,7 +165,7 @@ class order_card_clicked extends StatelessWidget {
                         const EdgeInsets.only(left: 15, right: 15, top: 10),
                     child: Container(
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           ElevatedButton.icon(
                               style: ElevatedButton.styleFrom(
@@ -174,7 +174,7 @@ class order_card_clicked extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(10.0),
                                   side: BorderSide(color: Tcolor),
                                 ),
-                                minimumSize: Size(160, 50),
+                                minimumSize: Size(140, 50),
                               ),
                               onPressed: () {},
                               icon: Icon(
@@ -192,7 +192,7 @@ class order_card_clicked extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(10.0),
                                   side: BorderSide(color: Tcolor),
                                 ),
-                                minimumSize: Size(160, 50),
+                                minimumSize: Size(140, 50),
                               ),
                               onPressed: () {},
                               icon: Icon(

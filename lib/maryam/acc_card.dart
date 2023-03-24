@@ -36,7 +36,7 @@ class acc_card extends StatelessWidget {
               bottom: 0,
               child: Text(
                 text,
-                style: TextStyle(fontWeight: FontWeight.bold),
+                style: TextStyle(fontWeight: FontWeight.normal),
               )),
         ],
       ),

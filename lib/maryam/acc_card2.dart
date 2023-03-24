@@ -33,8 +33,8 @@ class acc_card2 extends StatelessWidget {
                 text,
                 style: TextStyle(
                     fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black54),
+                    fontWeight: FontWeight.normal,
+                    color: Colors.black),
               )),
         ],
       ),
