@@ -54,10 +54,10 @@ class order_card_clicked extends StatelessWidget {
                         ),
                       ),
                       Positioned(
-                        top: 20,
+                        top: 30,
                         left: 20,
                         child: CircleAvatar(
-                          radius: 40.0,
+                          radius: 30.0,
                           backgroundImage: AssetImage(
                             img,
                           ),
@@ -65,15 +65,15 @@ class order_card_clicked extends StatelessWidget {
                       ),
                       Positioned(
                           top: 35,
-                          left: 110,
+                          left: 90,
                           child: Text(
                             name,
                             style: TextStyle(
-                                fontSize: 20, fontWeight: FontWeight.bold),
+                                fontSize: 18, fontWeight: FontWeight.bold),
                           )),
                       Positioned(
                           top: 65,
-                          left: 110,
+                          left: 90,
                           child: Text(
                             "Delivered on :" + date,
                             style: TextStyle(
@@ -165,7 +165,7 @@ class order_card_clicked extends StatelessWidget {
                         const EdgeInsets.only(left: 15, right: 15, top: 10),
                     child: Container(
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           ElevatedButton.icon(
                               style: ElevatedButton.styleFrom(
@@ -174,7 +174,7 @@ class order_card_clicked extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(10.0),
                                   side: BorderSide(color: Tcolor),
                                 ),
-                                minimumSize: Size(160, 50),
+                                minimumSize: Size(140, 50),
                               ),
                               onPressed: () {},
                               icon: Icon(
@@ -192,7 +192,7 @@ class order_card_clicked extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(10.0),
                                   side: BorderSide(color: Tcolor),
                                 ),
-                                minimumSize: Size(160, 50),
+                                minimumSize: Size(140, 50),
                               ),
                               onPressed: () {},
                               icon: Icon(

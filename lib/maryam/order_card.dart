@@ -48,24 +48,24 @@ class order_card extends StatelessWidget {
           ),
           Positioned(
             top: 20,
-            left: 20,
+            left: 15,
             child: CircleAvatar(
-              radius: 40.0,
+              radius: 35.0,
               backgroundImage: AssetImage(
                 img,
               ),
             ),
           ),
           Positioned(
-              top: 35,
-              left: 130,
+              top: 30,
+              left: 100,
               child: Text(
                 name,
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               )),
           Positioned(
               top: 65,
-              left: 130,
+              left: 100,
               child: Text(
                 "Delivered on :" + date,
                 style: TextStyle(
