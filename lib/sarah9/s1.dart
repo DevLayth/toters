@@ -3,8 +3,6 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 
-
-
 class s1 extends StatefulWidget {
   const s1({super.key});
 
@@ -15,13 +13,7 @@ class s1 extends StatefulWidget {
 class _s1State extends State<s1> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold( 
-      body: Padding(padding: const EdgeInsets.only(top: 100),
-      child: Column(
-        children:const  [
-          TextField(),
-        ],
-      ),),
+    return Scaffold( appBar: AppBar(title: Text("sarah"),),
     );
   }
 }
