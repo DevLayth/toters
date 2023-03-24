@@ -64,22 +64,22 @@ class order_card extends StatelessWidget {
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               )),
           Positioned(
-              top: 65,
+              top: 55,
               left: 100,
               child: Text(
                 "Delivered on :" + date,
                 style: TextStyle(
-                    fontSize: 15,
+                    fontSize: 14,
                     fontWeight: FontWeight.bold,
                     color: Colors.black45),
               )),
           Positioned(
-            top: 40,
+            top: 25,
             right: 20,
             child: Icon(
               Icons.chevron_right_outlined,
               color: Tcolor,
-              size: 40,
+              size: 35,
             ),
           ),
           Positioned(
@@ -95,7 +95,7 @@ class order_card extends StatelessWidget {
               bottom: 30,
               child: Text(
                 "Total : IQD " + (total + df).toString(),
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
               ))
         ],
       ),
