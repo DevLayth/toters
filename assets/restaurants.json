@@ -29,21 +29,21 @@
     "rname":"ofelia",
     "rimg":"assets/rest/ofelia.png",
     "rtype":"Food",
-    "rdesc":"$$ Fast Food",
+    "rdesc":"Best place for good food with family",
     "rdliver":15,
     "rate":4.1,
     "rmenu":[
     {
-        "fid":0,"fname":"cryspy","fprice":3500 ,"img":"assets/food/2.png" ,"desc":"" 
+        "fid":0,"fname":"shawrma","fprice":3500 ,"img":"assets/food/195461632-turkish-shawarma-with-beef-and-salsa-sauce-in-pita-bread-on-table.webp" ,"desc":"meat shawrma" 
     },
     {
-        "fid":1,"fname":"pizza","fprice":8000 ,"img":"assets/food/2.png"  ,"desc":""  
+        "fid":1,"fname":"pizza","fprice":8000 ,"img":"assets/food/download.jpg"  ,"desc":"spical pitzza"  
     },
     {
-        "fid":2,"fname":"burger","fprice":4500 ,"img":"assets/food/2.png" ,"desc":""  
+        "fid":2,"fname":"burger","fprice":4500 ,"img":"assets/food/583648-burger-4k-wallpaper.jpg" ,"desc":"yummy burger"  
     },
     {
-        "fid":3,"fname":"falafel","fprice":2500 ,"img":"assets/food/2.png" ,"desc":"" 
+        "fid":3,"fname":"taco","fprice":2500 ,"img":"assets/food/images.jpg" ,"desc":"hot and spicy" 
     }
     
 ]
@@ -53,21 +53,21 @@
     "rname":"Shaghaf - Duhok",
     "rimg":"assets/rest/shaghaf.jpg",
     "rtype":"Drinks",
-    "rdesc":"$$$ Coffee",
+    "rdesc":"best Coffee",
     "rdliver":18,
     "rate":4.5,
     "rmenu":[
         {
-            "fid":0,"fname":"cryspy","fprice":3500 ,"img":"assets/food/2.png" ,"desc":"" 
+            "fid":0,"fname":"coffe","fprice":2000 ,"img":"assets/food/coffe.jpg" ,"desc":"best coffe" 
         },
         {
-            "fid":1,"fname":"pizza","fprice":8000 ,"img":"assets/food/2.png"  ,"desc":""  
+            "fid":1,"fname":"cappuccino","fprice":3000 ,"img":"assets/food/img1.jpg"  ,"desc":"sweat cappuccino"  
         },
         {
-            "fid":2,"fname":"burger","fprice":4500 ,"img":"assets/food/2.png" ,"desc":""  
+            "fid":2,"fname":"juice","fprice":2500 ,"img":"assets/food/istockphoto-487402642-170667a.jpg" ,"desc":"fresh fruit juice"  
         },
         {
-            "fid":3,"fname":"falafel","fprice":2500 ,"img":"assets/food/2.png" ,"desc":"" 
+            "fid":3,"fname":"water","fprice":1000 ,"img":"assets/food/1c5cd8864f38f58ec77044b9a96b4bcc.jpg" ,"desc":"fresh water" 
         }
         
     ]
