@@ -15,7 +15,7 @@ class resturant_card extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          height: 400,
+          height: 450,
           color: Color.fromARGB(255, 255, 255, 255),
         ),
         Positioned(
@@ -28,14 +28,14 @@ class resturant_card extends StatelessWidget {
           ),
         ),
         Positioned(
-            bottom: 70,
+            bottom: 110,
             left: 20,
             child: Text(
               name,
-              style: TextStyle(fontSize: 24),
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             )),
         Positioned(
-            bottom: 40,
+            bottom: 80,
             left: 20,
             child: Text(
               desc,
@@ -94,6 +94,13 @@ class resturant_card extends StatelessWidget {
             ),
           ),
         ),
+        Positioned(
+            bottom: 0,
+            left: 10,
+            child: Text(
+              "Menu",
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ))
       ],
     );
   }

@@ -3,24 +3,24 @@
     "rname":"texas",
     "rimg":"assets/rest/texas.png",
     "rtype":"Food",
-    "rdesc":"$$$ Fast Food",
+    "rdesc":"texas Fast Food hot and spicy",
     "rdliver":25,
     "rate":3.5,
     "rmenu":[
     {
-        "fid":0,"fname":"pizza","fprice":8000  ,"img":"assets/food/2.png" ,"desc":"" 
+        "fid":0,"fname":"meat pizza","fprice":8000  ,"img":"assets/food/istockphoto-139892156-612x612.jpg" ,"desc":"hot meat pizza" 
     },
     {
-        "fid":1,"fname":"pizza","fprice":8000  ,"img":"assets/food/2.png" ,"desc":"" 
+        "fid":1,"fname":"chesse pizza","fprice":8000  ,"img":"assets/food/wp8620067.jpg" ,"desc":"chesse pizza" 
     },
     {
-        "fid":2,"fname":"burger","fprice":4000 ,"img":"assets/food/2.png" ,"desc":"" 
+        "fid":2,"fname":"burger","fprice":4000 ,"img":"assets/food/wp4056225.jpg" ,"desc":"delicious hot burger" 
     },
     {
-        "fid":3,"fname":"falafel","fprice":2500 ,"img":"assets/food/2.png" ,"desc":"" 
+        "fid":3,"fname":"falafel","fprice":2500 ,"img":"assets/food/istockphoto-1315120814-612x612.jpg" ,"desc":"texsas falafl" 
     },
     {
-        "fid":4,"fname":"cryspy","fprice":3500 ,"img":"assets/food/2.png"  ,"desc":"" 
+        "fid":4,"fname":"cryspy","fprice":3500 ,"img":"assets/food/fried-chicken-wings-with-red-pepper-wallpaper-1600x900_47.jpg"  ,"desc":"fire cryspy" 
     }
 ]
 },

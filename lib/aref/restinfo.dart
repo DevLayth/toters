@@ -16,52 +16,66 @@ class menu_card extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Row(
-        children: [
-          SizedBox(
-            width: 100,
-            height: 100,
-            child: Image.asset(pic),
-          ),
-          const SizedBox(width: 10),
-          Expanded(
-            child: DefaultTextStyle(
-              style: const TextStyle(color: Colors.black54),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: EdgeInsets.symmetric(vertical: 0),
-                    child: Text(
-                      name,
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                  Row(
-                    children: [
-                      Text(
-                        desc,
-                        style: TextStyle(fontSize: 16),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      Text(
-                        price.toString(),
-                        style: TextStyle(
-                            color: Color.fromARGB(255, 9, 143, 14),
-                            fontSize: 16),
-                      ),
-                    ],
-                  )
-                ],
+    return Padding(
+      padding: EdgeInsets.all(10),
+      child: Container(
+        height: 100,
+        child: Center(
+          child: Row(
+            children: [
+              SizedBox(
+                width: 125,
+                child: Image.asset(pic),
               ),
-            ),
-          )
-        ],
+              SizedBox(width: 10),
+              Expanded(
+                child: DefaultTextStyle(
+                  style: const TextStyle(color: Colors.black54),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        height: 15,
+                      ),
+                      Padding(
+                        padding: EdgeInsets.symmetric(vertical: 0),
+                        child: Text(
+                          name,
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      Container(
+                        height: 10,
+                      ),
+                      Row(
+                        children: [
+                          Text(
+                            desc,
+                            style: TextStyle(fontSize: 14),
+                          ),
+                        ],
+                      ),
+                      Container(
+                        height: 10,
+                      ),
+                      Row(
+                        children: [
+                          Text(
+                            price.toString(),
+                            style: TextStyle(
+                                color: Color.fromARGB(255, 9, 143, 14),
+                                fontSize: 16),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
