@@ -42,7 +42,7 @@ class resturant_card extends StatelessWidget {
               style: TextStyle(fontSize: 18, color: Colors.grey),
             )),
         Positioned(
-          top: 10,
+          top: 20,
           left: 20,
           child: GestureDetector(
             onTap: () {
@@ -59,7 +59,7 @@ class resturant_card extends StatelessWidget {
           ),
         ),
         Positioned(
-          top: 10,
+          top: 20,
           right: 120,
           child: CircleAvatar(
             radius: 15,
@@ -71,7 +71,7 @@ class resturant_card extends StatelessWidget {
           ),
         ),
         Positioned(
-          top: 10,
+          top: 20,
           right: 70,
           child: CircleAvatar(
             radius: 15,
@@ -83,7 +83,7 @@ class resturant_card extends StatelessWidget {
           ),
         ),
         Positioned(
-          top: 10,
+          top: 20,
           right: 20,
           child: CircleAvatar(
             radius: 15,
