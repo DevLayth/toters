@@ -72,17 +72,17 @@ class order_card_clicked extends StatelessWidget {
                                 fontSize: 18, fontWeight: FontWeight.bold),
                           )),
                       Positioned(
-                          top: 57,
+                          top: 60,
                           left: 90,
                           child: Text(
                             "Delivered on :" + date,
                             style: TextStyle(
-                                fontSize: 15,
+                                fontSize: 14,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black45),
                           )),
                       Positioned(
-                        top: 30,
+                        top: 15,
                         right: 8,
                         child: Icon(
                           Icons.chevron_right_outlined,
