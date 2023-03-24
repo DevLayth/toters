@@ -55,7 +55,7 @@ class order_card_clicked extends StatelessWidget {
                       ),
                       Positioned(
                         top: 30,
-                        left: 20,
+                        left: 8,
                         child: CircleAvatar(
                           radius: 30.0,
                           backgroundImage: AssetImage(
@@ -65,7 +65,7 @@ class order_card_clicked extends StatelessWidget {
                       ),
                       Positioned(
                           top: 35,
-                          left: 90,
+                          left: 75,
                           child: Text(
                             name,
                             style: TextStyle(
@@ -73,7 +73,7 @@ class order_card_clicked extends StatelessWidget {
                           )),
                       Positioned(
                           top: 60,
-                          left: 90,
+                          left: 75,
                           child: Text(
                             "Delivered on :" + date,
                             style: TextStyle(
@@ -82,7 +82,7 @@ class order_card_clicked extends StatelessWidget {
                                 color: Colors.black45),
                           )),
                       Positioned(
-                        top: 15,
+                        top: 35,
                         right: 8,
                         child: Icon(
                           Icons.chevron_right_outlined,
