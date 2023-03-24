@@ -15,7 +15,7 @@ class picks_week_list extends StatelessWidget {
     return Padding(
         padding: const EdgeInsets.only(top: 10, bottom: 10),
         child: Container(
-            height: 320,
+            height: 300,
             color: Colors.white,
             child: Stack(
               children: [
@@ -47,7 +47,7 @@ class picks_week_list extends StatelessWidget {
                 Positioned(
                   bottom: 20,
                   child: Container(
-                    height: 250,
+                    height: 220,
                     width: 415,
                     child: FutureBuilder<List<Restaurant>>(
                       future: fetchRestaurants(),
