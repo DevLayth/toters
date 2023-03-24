@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:toters/colors.dart';
+
+import 'custom_appbar.dart';
 
 
 class s1 extends StatefulWidget {
@@ -16,62 +19,11 @@ class _s1State extends State<s1> {
     return Scaffold( backgroundColor: Colors.white,
     body:SafeArea(
       child: Column(children: [
-        customAppbar()
+        customAppbar(),
+        Chip( backgroundColor: Tcolor,
+          label: Text("Restaurants"))
       ]),
     ),
-    );
-  }
-}
-
-class customAppbar extends StatelessWidget {
-  const customAppbar({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(right: 10.0,top: 10.0),
-      child: Row(children: [
-        IconButton
-        (onPressed: (){}, icon: Icon(Icons.menu_rounded,)),
-        SizedBox(width: MediaQuery.of(context).size.width*0.1,),
-        Expanded(
-          child: Container(
-            padding: const EdgeInsets.only(left: 10.0),
-            height: 35,
-            decoration: BoxDecoration(color:Colors.white60,
-        borderRadius: BorderRadius.circular(50),
-    
-        ),
-        child: Row(
-          children: [
-            Expanded(
-              child: TextFormField(style:const TextStyle(fontSize: 14),
-                decoration:const
-              InputDecoration(hintText: "Search for store or an item",
-              helperStyle: TextStyle(
-                fontSize: 14,
-              ),
-              enabledBorder: InputBorder.none,
-              focusedBorder: InputBorder.none,
-              ),
-              ),
-            ),
-            Container(
-            padding: const EdgeInsets.only(left: 10.0),
-            height: 35,
-            width: 60,
-            decoration: BoxDecoration(color:Colors.green,
-        borderRadius: BorderRadius.circular(50),
-    
-        ),
-        child: Icon(Icons.search,color: Colors.black38,),
-        )
-          ],
-        ),
-        ))
-      ],),
     );
   }
 }
