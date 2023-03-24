@@ -6,7 +6,7 @@ class menu_card extends StatelessWidget {
   final String pic;
   final String name;
   final String desc;
-  final double price;
+  final int price;
   const menu_card(
       {super.key,
       required this.desc,

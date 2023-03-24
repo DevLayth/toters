@@ -23,12 +23,27 @@ class Foodpage extends StatelessWidget {
           if (snapshot.hasData) {
             final restaurants = snapshot.data!.toList();
 
-            return Column(
+            return ListView(
               children: [
                 resturant_card(
                     pic: restaurants[id].image,
                     name: restaurants[id].name,
                     desc: restaurants[id].desc),
+                Container(
+                  child: ListView.builder(
+                    shrinkWrap: true,
+                    physics: NeverScrollableScrollPhysics(),
+                    scrollDirection: Axis.vertical,
+                    itemCount: restaurants[id].menu.length,
+                    itemBuilder: (context, index) {
+                      return menu_card(
+                          desc: restaurants[id].menu[index].desc,
+                          name: restaurants[id].menu[index].name,
+                          pic: restaurants[id].menu[index].img,
+                          price: restaurants[id].menu[index].price);
+                    },
+                  ),
+                )
                 // menu_card(desc: restaurants[id].menu[id].name, name: name, pic: pic, price: price)
               ],
             );
