@@ -4,7 +4,16 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:toters/colors.dart';
 
 class circle_food extends StatelessWidget {
-  const circle_food({super.key});
+  final String name;
+  final String img;
+  final String rest;
+  final int price;
+  const circle_food(
+      {super.key,
+      required this.name,
+      required this.img,
+      required this.price,
+      required this.rest});
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +21,7 @@ class circle_food extends StatelessWidget {
       children: [
         Container(
           color: Colors.white,
-          height: 225,
+          height: 200,
           width: 150,
           child: Stack(
             children: [
@@ -22,30 +31,32 @@ class circle_food extends StatelessWidget {
                 right: 0,
                 child: CircleAvatar(
                   radius: 65,
-                  backgroundImage: AssetImage("assets/rest/ofelia.png"),
+                  backgroundImage: AssetImage(img),
                 ),
               ),
               Positioned(
-                  bottom: 30,
-                  left: 15,
+                  bottom: 35,
+                  left: 30,
                   child: Text(
-                    "Rizo",
-                    style: TextStyle(fontSize: 20),
+                    name,
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   )),
               Positioned(
                   bottom: 18,
-                  left: 15,
+                  left: 30,
                   child: Text(
-                    "Rest Name ",
-                    style: TextStyle(fontWeight: FontWeight.w600),
+                    rest,
+                    style: TextStyle(fontWeight: FontWeight.w600, fontSize: 15),
                   )),
               Positioned(
                   bottom: 0,
-                  left: 15,
+                  left: 30,
                   child: Text(
-                    "IQD " + "6000",
-                    style:
-                        TextStyle(color: Tcolor, fontWeight: FontWeight.w600),
+                    "IQD " + price.toString(),
+                    style: TextStyle(
+                        color: Tcolor,
+                        fontWeight: FontWeight.w600,
+                        fontSize: 15),
                   )),
             ],
           ),

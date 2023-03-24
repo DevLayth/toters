@@ -3,6 +3,9 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:toters/colors.dart';
 import 'package:toters/layth/circle_food_card.dart';
+import 'package:toters/layth/resturant_data_fetch.dart';
+
+import 'data_classes.dart';
 
 class picks_week_list extends StatelessWidget {
   const picks_week_list({super.key});
@@ -42,21 +45,43 @@ class picks_week_list extends StatelessWidget {
                   ),
                 ),
                 Positioned(
-                    bottom: 40,
-                    child: Container(
-                      height: 200,
-                      width: 450,
-                      child: ListView(
-                        physics: BouncingScrollPhysics(),
-                        scrollDirection: Axis.horizontal,
-                        children: [
-                          circle_food(),
-                          circle_food(),
-                          circle_food(),
-                          circle_food()
-                        ],
-                      ),
-                    ))
+                  bottom: 20,
+                  child: Container(
+                    height: 250,
+                    width: 415,
+                    child: FutureBuilder<List<Restaurant>>(
+                      future: fetchRestaurants(),
+                      builder: (context, snapshot) {
+                        if (snapshot.hasData) {
+                          final restaurants = snapshot.data!;
+
+                          return ListView.builder(
+                              physics: BouncingScrollPhysics(),
+                              scrollDirection: Axis.horizontal,
+                              itemCount: restaurants.length,
+                              itemBuilder: (context, index) {
+                                return Padding(
+                                  padding:
+                                      const EdgeInsets.only(top: 20, right: 10),
+                                  child: Container(
+                                    child: circle_food(
+                                      name: restaurants[index].menu[1].name,
+                                      rest: restaurants[index].name,
+                                      price: restaurants[index].menu[1].price,
+                                      img: restaurants[index].menu[1].img,
+                                    ),
+                                  ),
+                                );
+                              });
+                        } else if (snapshot.hasError) {
+                          return Center(child: Text('${snapshot.error}'));
+                        } else {
+                          return Center(child: CircularProgressIndicator());
+                        }
+                      },
+                    ),
+                  ),
+                )
               ],
             )));
   }
