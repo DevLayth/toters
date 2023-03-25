@@ -92,7 +92,7 @@ body: SafeArea(child: SingleChildScrollView(
   
               style: const TextStyle(
   
-                color: Tcolor,
+                color: Colors.amber,
   
                 fontSize: 18,
   
@@ -177,9 +177,9 @@ body: SafeArea(child: SingleChildScrollView(
             ),
   
           const SizedBox(width: 8.0,),      
-  
-  
-  
+
+
+
             const Text("1",
   
             style:  TextStyle(
