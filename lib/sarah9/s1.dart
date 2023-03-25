@@ -31,17 +31,10 @@ class _s1State extends State<s1> {
           padding: EdgeInsets.all(8.0),
           child: Text("Popular Food",style:  TextStyle(
                   fontSize: 20,fontWeight: FontWeight.bold),),
-        ),
-
-
-
-        //create model our app food
+        ), //create model our app food
         FoodCard(),
         
-      ],
-      
-      
-      ),
+      ],),
     ),
     );
   }

@@ -52,7 +52,8 @@ class FoodProduct extends StatelessWidget {
       BoxDecoration(
         color: Colors.white10.withOpacity(1),
         borderRadius: BorderRadius.circular(15.0)),
-        child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+        child: Column
+        (crossAxisAlignment: CrossAxisAlignment.start,
           children: [
           Image.asset(product.image),
           Text(product.title,
