@@ -131,7 +131,7 @@
             "fid":7,"fname":"Pomegranate","fprice":2000 ,"img":"assets/food/ojpomegranate.jpg" ,"desc":"Juice" 
         },
         {
-            "fid":3,"fname":"Swiss","fprice":2000 ,"img":"assets/food/ojswiss.jpg" ,"desc":"" 
+            "fid":8,"fname":"Swiss","fprice":2000 ,"img":"assets/food/ojswiss.jpg" ,"desc":"Juice" 
         }
         
     ]

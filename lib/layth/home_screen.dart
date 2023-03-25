@@ -18,7 +18,6 @@ class home_screen extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          toolbarHeight: 50,
           actions: [
             IconButton(
                 onPressed: () {},
@@ -26,35 +25,32 @@ class home_screen extends StatelessWidget {
                     color: Colors.black26, size: 30))
           ],
           backgroundColor: Colors.white,
-          flexibleSpace: Container(
-            child: Stack(
-              children: [
-                Positioned(
-                  top: 40,
-                  left: 10,
-                  child: Text(
-                    "Dilivering To",
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 15,
-                        fontWeight: FontWeight.w400),
-                  ),
+          flexibleSpace: Stack(
+            children: [
+              Positioned(
+                top: 40,
+                left: 10,
+                child: Text(
+                  "Dilivering To",
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w400),
                 ),
-                Positioned(
-                  top: 60,
-                  left: 10,
-                  child: Text(
-                    "KRO",
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 15,
-                        fontWeight: FontWeight.w700),
-                  ),
+              ),
+              Positioned(
+                top: 60,
+                left: 10,
+                child: Text(
+                  "KRO",
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w700),
                 ),
-                Positioned(
-                    top: 56, left: 35, child: Icon(Icons.arrow_drop_down))
-              ],
-            ),
+              ),
+              Positioned(top: 58, left: 35, child: Icon(Icons.arrow_drop_down))
+            ],
           ),
         ),
         body: ListView(

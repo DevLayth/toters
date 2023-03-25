@@ -12,6 +12,7 @@ class picks_week_list extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
     return Padding(
         padding: const EdgeInsets.only(top: 10, bottom: 10),
         child: Container(
@@ -48,7 +49,7 @@ class picks_week_list extends StatelessWidget {
                   bottom: 20,
                   child: Container(
                     height: 220,
-                    width: 415,
+                    width: screenWidth,
                     child: FutureBuilder<List<Restaurant>>(
                       future: fetchRestaurants(),
                       builder: (context, snapshot) {

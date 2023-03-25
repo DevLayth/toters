@@ -12,6 +12,7 @@ class top_picks extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
     return Padding(
       padding: const EdgeInsets.only(top: 20),
       child: Container(
@@ -56,13 +57,15 @@ class top_picks extends StatelessWidget {
               top: 80,
               child: Container(
                 height: 250,
-                width: 358,
+                width: screenWidth,
                 child: FutureBuilder<List<Restaurant>>(
                   future: fetchRestaurants(),
                   builder: (context, snapshot) {
                     if (snapshot.hasData) {
                       final restaurants = snapshot.data!;
+
                       return ListView.builder(
+                        itemExtent: 310,
                         physics: BouncingScrollPhysics(),
                         scrollDirection: Axis.horizontal,
                         itemCount: restaurants.length,

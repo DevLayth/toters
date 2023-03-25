@@ -53,6 +53,7 @@ class butler_screen extends StatelessWidget {
                   ],
                 ),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(left: 10, bottom: 10),
@@ -92,10 +93,13 @@ class butler_screen extends StatelessWidget {
                       width: 125,
                       child: Image.asset("assets/catag/butler1.jpg"),
                     ),
-                    Icon(
-                      Icons.chevron_right_outlined,
-                      size: 30,
-                      color: Tcolor,
+                    Padding(
+                      padding: const EdgeInsets.only(right: 10),
+                      child: Icon(
+                        Icons.chevron_right_outlined,
+                        size: 30,
+                        color: Tcolor,
+                      ),
                     )
                   ],
                 ),
@@ -118,6 +122,7 @@ class butler_screen extends StatelessWidget {
                   ],
                 ),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(left: 15, bottom: 5),
@@ -139,7 +144,7 @@ class butler_screen extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                width: 160,
+                                width: 150,
                                 child: Text(
                                   "Didn't find what you were looking for at our stores? Our butlers can buy whatever you need from your store of choice.",
                                   overflow: TextOverflow.fade,
@@ -158,10 +163,13 @@ class butler_screen extends StatelessWidget {
                       width: 125,
                       child: Image.asset("assets/catag/butler2.jpg"),
                     ),
-                    Icon(
-                      Icons.chevron_right_outlined,
-                      size: 30,
-                      color: Tcolor,
+                    Padding(
+                      padding: const EdgeInsets.only(right: 10),
+                      child: Icon(
+                        Icons.chevron_right_outlined,
+                        size: 30,
+                        color: Tcolor,
+                      ),
                     )
                   ],
                 ),

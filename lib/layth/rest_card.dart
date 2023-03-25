@@ -96,7 +96,7 @@ class rest_card extends StatelessWidget {
             left: 5,
             child: Container(
               height: 25,
-              width: 60,
+              width: 55,
               decoration: BoxDecoration(
                   color: Color.fromARGB(20, 0, 0, 0),
                   borderRadius: BorderRadius.circular(7)),
@@ -121,9 +121,9 @@ class rest_card extends StatelessWidget {
             left: 80,
             child: Container(
               height: 25,
-              width: 120,
+              width: 110,
               decoration: BoxDecoration(
-                  color: Color.fromARGB(57, 77, 113, 230),
+                  color: Color.fromARGB(26, 77, 113, 230),
                   borderRadius: BorderRadius.circular(7)),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -136,7 +136,7 @@ class rest_card extends StatelessWidget {
                   Text(
                     "Earn Points",
                     style: TextStyle(
-                      fontWeight: FontWeight.w600,
+                      fontWeight: FontWeight.normal,
                       fontSize: 14,
                       color: Colors.blue,
                     ),

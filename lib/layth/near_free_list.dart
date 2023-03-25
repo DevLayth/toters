@@ -12,6 +12,7 @@ class near_free extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
     return Padding(
       padding: const EdgeInsets.only(top: 0),
       child: Container(
@@ -56,7 +57,7 @@ class near_free extends StatelessWidget {
               top: 80,
               child: Container(
                 height: 250,
-                width: 358,
+                width: screenWidth,
                 child: FutureBuilder<List<Restaurant>>(
                   future: fetchRestaurants(),
                   builder: (context, snapshot) {
@@ -65,6 +66,7 @@ class near_free extends StatelessWidget {
                           .where((restaurant) => restaurant.diliver <= 20)
                           .toList();
                       return ListView.builder(
+                        itemExtent: 310,
                         physics: BouncingScrollPhysics(),
                         scrollDirection: Axis.horizontal,
                         itemCount: restaurants.length,
