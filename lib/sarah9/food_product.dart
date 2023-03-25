@@ -64,7 +64,7 @@ class FoodProduct extends StatelessWidget {
             Text("\IQD ${product.price}",
             
             style: const TextStyle(
-              color: Colors.black,
+              color: Tcolor,
               fontSize: 14,
               fontWeight: FontWeight.bold),
             ),
