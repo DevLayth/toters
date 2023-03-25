@@ -23,11 +23,11 @@ class top_picks extends StatelessWidget {
               left: 10,
               child: Text(
                 "Top Picks, Just For You",
-                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
             ),
             Positioned(
-              top: 30,
+              top: 35,
               left: 10,
               child: Container(
                 width: 320,
@@ -36,8 +36,8 @@ class top_picks extends StatelessWidget {
               ),
             ),
             Positioned(
-              left: 275,
-              top: 4,
+              left: 225,
+              top: 0,
               child: Icon(
                 Icons.star,
                 color: Colors.amber,
@@ -45,7 +45,7 @@ class top_picks extends StatelessWidget {
             ),
             Positioned(
               right: 20,
-              top: 10,
+              top: 0,
               child: Icon(
                 Icons.chevron_right_outlined,
                 color: Tcolor,
@@ -56,7 +56,7 @@ class top_picks extends StatelessWidget {
               top: 80,
               child: Container(
                 height: 250,
-                width: 415,
+                width: 358,
                 child: FutureBuilder<List<Restaurant>>(
                   future: fetchRestaurants(),
                   builder: (context, snapshot) {
@@ -71,9 +71,9 @@ class top_picks extends StatelessWidget {
 
                           return Padding(
                             padding: const EdgeInsets.only(
-                                right: 20, left: 15, top: 0),
+                                right: 20, left: 5, top: 0),
                             child: Container(
-                              width: 340,
+                              width: 310,
                               child: rest_card(
                                   id: restaurant.id,
                                   img: restaurant.image,

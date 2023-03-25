@@ -23,7 +23,7 @@ class picks_week_list extends StatelessWidget {
                   left: 10,
                   child: Text(
                     "Picks of the Week",
-                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                 ),
                 Positioned(

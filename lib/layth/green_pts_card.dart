@@ -16,7 +16,7 @@ class GreenPts extends StatelessWidget {
         children: [
           Positioned(
             top: 10,
-            left: 5,
+            left: 10,
             child: Text(
               "Green",
               style: TextStyle(
@@ -52,7 +52,7 @@ class GreenPts extends StatelessWidget {
                 child: Stack(
                   children: [
                     Positioned(
-                      left: 0,
+                      left: 10,
                       top: 5,
                       child: Text(
                         "0",
@@ -61,15 +61,15 @@ class GreenPts extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      left: 20,
-                      top: 5,
+                      left: 30,
+                      top: 8,
                       child: Text(
                         "Pts",
                         style: TextStyle(fontSize: 15, color: Colors.black54),
                       ),
                     ),
                     Positioned(
-                        left: 17,
+                        left: 25,
                         bottom: 15,
                         child: Icon(
                           Icons.arrow_right_alt,
