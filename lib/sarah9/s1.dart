@@ -6,6 +6,7 @@ import 'package:toters/sarah9/food_model.dart';
 
 import 'category_list.dart';
 import 'custom_appbar.dart';
+import 'food_product.dart';
 
 
 class s1 extends StatefulWidget {
@@ -20,22 +21,23 @@ class _s1State extends State<s1> {
   Widget build(BuildContext context) {
     return Scaffold( backgroundColor: Colors.white,
     body:SafeArea(
-      child: ListView(children:  [
+      child: ListView(children: const [
         //appbar
         customAppbar(),
         SizedBox(height: 20,
         ),
         CategoryCard(),
-        //create model our app food
-        Container( padding:const EdgeInsets.all(10.0),
-          decoration: 
-        BoxDecoration(
-          color: Tcolor.withOpacity(1),
-          borderRadius: BorderRadius.circular(10.0)),
-          child: Column(children: [
-            Image.asset(foodProducts[1].image)
-          ],),
+        Padding(
+          padding: EdgeInsets.all(8.0),
+          child: Text("Popular Food",style:  TextStyle(
+                  fontSize: 20,fontWeight: FontWeight.bold),),
         ),
+
+
+
+        //create model our app food
+        FoodCard(),
+        
       ],
       
       
