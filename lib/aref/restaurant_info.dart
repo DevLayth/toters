@@ -36,7 +36,8 @@ class RestaurantInfo extends StatelessWidget {
                         backgroundColor: Color(0xFF868686),
                       ),
                     ),
-                    Text("Chinese, American, Deshi food")
+                    Text("Chinese, American, Deshi food"),
+                    Positioned(bottom: 2, child: Icon(Icons.star))
                   ],
                 ),
               ),
