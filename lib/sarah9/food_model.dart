@@ -21,23 +21,16 @@ class Product {
 List<Product> foodProducts = [
   Product(
     id: 0,
-    image: 'assets/food/1.jpg',
+    image: "assets/food2/burger.png",
     title: "Burger",
     price: 7500,
     description: description,
     rating: 4.8,
   ),
-  Product(
-    id: 2,
-    image: "assets/food/wp8620067.jpg",
-    title: "pizza",
-    price: 12000,
-    description: description,
-    rating: 4.1,
-  ),
+  
   Product(
     id: 3,
-    image: "assets/food/scale.jpg",
+    image: "assets/food2/sae_food.png",
     title: "Sea Food",
     price: 25000,
     description: description,
@@ -45,23 +38,23 @@ List<Product> foodProducts = [
   ),
   Product(
     id: 4,
-    image: "assets/food/Rosemary-Salmon-56a47ebf3df78cf77282b4a1.jpg",
+    image: "assets/food2/fish.png",
     title: "Fish",
-    price: 2300,
+    price: 23000,
     description: description,
     rating: 4.4,
   ),
   Product(
     id: 5,
-    image: "assets/food/op.jpg",
-    title: "Kbab",
-    price: 33000,
+    image: "assets/food2/soup.png",
+    title: "Soup",
+    price: 3000,
     description: description,
     rating: 4.2,
   ), 
   Product(
     id: 6,
-    image: "assets/food/kk.jpg",
+    image: "assets/food2/light_food.png",
     title: "Light Food",
     price: 7000,
     description: description,
@@ -70,11 +63,19 @@ List<Product> foodProducts = [
 
 Product(
     id: 6,
-    image: "assets/food/ch.jpg",
+    image: "assets/food2/chicken.png",
     title:"chickens",
     price: 14000,
     description: description,
     rating: 5.1,
+  ),
+  Product(
+    id: 2,
+    image: "assets/food2/wp8620067.jpg",
+    title: "pizza",
+    price: 12000,
+    description: description,
+    rating: 4.1,
   ),
 ];
 
