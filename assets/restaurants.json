@@ -77,21 +77,21 @@
     "rname":"Eat&Go",
     "rimg":"assets/rest/eat_go.jpg",
     "rtype":"Food",
-    "rdesc":"$ Fast Food",
+    "rdesc":"fast and great food",
     "rdliver":19,
     "rate":4.8,
     "rmenu":[
         {
-            "fid":0,"fname":"cryspy","fprice":3500 ,"img":"assets/food/2.png" ,"desc":"" 
+            "fid":0,"fname":"shawrma","fprice":1500 ,"img":"assets/food/eat and go1.jpg" ,"desc":"hot and spicy shawrma" 
         },
         {
-            "fid":1,"fname":"pizza","fprice":8000 ,"img":"assets/food/2.png"  ,"desc":""  
+            "fid":1,"fname":"wajba falafl","fprice":3000 ,"img":"assets/food/eat and go 2.jpg"  ,"desc":"our falafl is best"  
         },
         {
-            "fid":2,"fname":"burger","fprice":4500 ,"img":"assets/food/2.png" ,"desc":""  
+            "fid":2,"fname":"saj","fprice":4500 ,"img":"assets/food/eat and go3.jpg" ,"desc":"our spical meal"  
         },
         {
-            "fid":3,"fname":"falafel","fprice":2500 ,"img":"assets/food/2.png" ,"desc":"" 
+            "fid":3,"fname":"wings","fprice":2500 ,"img":"assets/food/eat and go 4.jpg" ,"desc":"spicy wings" 
         }
         
     ]

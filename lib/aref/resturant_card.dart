@@ -15,7 +15,7 @@ class resturant_card extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          height: 450,
+          height: 500,
           color: Color.fromARGB(255, 255, 255, 255),
         ),
         Positioned(
@@ -28,14 +28,14 @@ class resturant_card extends StatelessWidget {
           ),
         ),
         Positioned(
-            bottom: 110,
+            bottom: 160,
             left: 20,
             child: Text(
               name,
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             )),
         Positioned(
-            bottom: 80,
+            bottom: 130,
             left: 20,
             child: Text(
               desc,
@@ -95,12 +95,51 @@ class resturant_card extends StatelessWidget {
           ),
         ),
         Positioned(
+            bottom: 50,
+            left: 195,
+            child: Icon(
+              Icons.star,
+              color: Colors.green,
+              size: 30,
+            )),
+        Positioned(
+            bottom: 50,
+            left: 170,
+            child: Icon(
+              Icons.star,
+              color: Colors.green,
+              size: 30,
+            )),
+        Positioned(
+            bottom: 50,
+            left: 145,
+            child: Icon(
+              Icons.star,
+              color: Colors.green,
+              size: 30,
+            )),
+        Positioned(
+            bottom: 50,
+            left: 120,
+            child: Icon(
+              Icons.star,
+              color: Colors.green,
+              size: 30,
+            )),
+        Positioned(
             bottom: 0,
-            left: 10,
+            left: 30,
             child: Text(
               "Menu",
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-            ))
+            )),
+        Positioned(
+            bottom: 50,
+            left: 30,
+            child: Text(
+              "Rating",
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            )),
       ],
     );
   }
