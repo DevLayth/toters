@@ -113,7 +113,7 @@ class FoodProduct extends StatelessWidget {
         ),
           const Icon(Icons.star,
           size: 20,
-    
+      
           color: Tcolor,
           ),Text(
             "${product.rating}",

@@ -45,7 +45,7 @@ List<Product> foodProducts = [
   ),
   Product(
     id: 4,
-    image: "assets/food/the-health-benefits-of-salmon-700-350-5baa608.jpg",
+    image: "assets/food/Rosemary-Salmon-56a47ebf3df78cf77282b4a1.jpg",
     title: "Fish",
     price: 2300,
     description: description,
@@ -53,7 +53,7 @@ List<Product> foodProducts = [
   ),
   Product(
     id: 5,
-    image: "assets/food/soup.jpg",
+    image: "assets/istockphoto-1349381997-612x612.jpg",
     title: "Soup",
     price: 4000,
     description: description,
@@ -61,7 +61,7 @@ List<Product> foodProducts = [
   ), 
   Product(
     id: 6,
-    image: "assets/food/55.jpg",
+    image: "assets/food/s1.jpg",
     title: "Light Food",
     price: 20,
     description: description,
