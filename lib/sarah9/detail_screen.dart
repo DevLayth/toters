@@ -36,7 +36,7 @@ body: SafeArea(child: SingleChildScrollView(
   
       BoxDecoration(
   
-        color: Tcolor,
+        color: Colors.white60,
   
       borderRadius:const  
   
@@ -92,7 +92,7 @@ body: SafeArea(child: SingleChildScrollView(
   
               style: const TextStyle(
   
-                color: Colors.amber,
+                color: Tcolor,
   
                 fontSize: 18,
   

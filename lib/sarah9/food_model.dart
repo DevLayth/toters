@@ -21,11 +21,19 @@ class Product {
 List<Product> foodProducts = [
   Product(
     id: 0,
-    image: 'assets/food/1.jpg',
+    image: 'assets/food/burger-iStock-1254672762-1-scaled.jpg',
     title: "Burger",
     price: 7500,
     description: description,
     rating: 4.8,
+  ),
+Product(
+    id: 3,
+    image: "assets/food/scale.jpg",
+    title: "Sea Food",
+    price: 25000,
+    description: description,
+    rating: 4.0,
   ),
   Product(
     id: 2,
@@ -35,14 +43,7 @@ List<Product> foodProducts = [
     description: description,
     rating: 4.1,
   ),
-  Product(
-    id: 3,
-    image: "assets/food/scale.jpg",
-    title: "Sea Food",
-    price: 25000,
-    description: description,
-    rating: 4.0,
-  ),
+  
   Product(
     id: 4,
     image: "assets/food/Rosemary-Salmon-56a47ebf3df78cf77282b4a1.jpg",

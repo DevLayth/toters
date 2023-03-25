@@ -22,8 +22,8 @@ class FoodCard extends StatelessWidget {
       childAspectRatio: 0.75,
       mainAxisExtent: 190,
       crossAxisSpacing: 10.0,
-      
-      
+
+
       
       ), 
       itemBuilder: (context,index)=>FoodProduct(press: () { 
