@@ -63,7 +63,7 @@ class home_screen extends StatelessWidget {
           children: [
             GreenPts(),
             Container(
-                height: 425,
+                height: 430,
                 width: 450,
                 color: Colors.white,
                 child: Column(

@@ -14,7 +14,7 @@ class butler_screen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              height: 160,
+              height: 150,
               color: Tcolor,
               child: Center(
                 child: Padding(
@@ -39,7 +39,7 @@ class butler_screen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: Container(
-                height: 185,
+                height: 160,
                 decoration: BoxDecoration(
                   color: Color.fromARGB(207, 255, 249, 249),
                   borderRadius: BorderRadius.circular(10),
@@ -55,11 +55,11 @@ class butler_screen extends StatelessWidget {
                 child: Row(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(left: 20, bottom: 10),
+                      padding: const EdgeInsets.only(left: 10, bottom: 10),
                       child: Row(
                         children: [
                           Column(
-                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Padding(
                                 padding:
@@ -69,17 +69,17 @@ class butler_screen extends StatelessWidget {
                                   style: TextStyle(
                                       color: Tcolor,
                                       fontSize: 20,
-                                      fontWeight: FontWeight.bold),
+                                      fontWeight: FontWeight.w500),
                                 ),
                               ),
                               Container(
-                                width: 160,
+                                width: 150,
                                 child: Text(
                                   "e.g. you forget your keys at home and need to get them delivered to the office",
                                   overflow: TextOverflow.fade,
                                   style: TextStyle(
                                       color: Color.fromARGB(221, 65, 63, 63),
-                                      fontSize: 17),
+                                      fontSize: 15),
                                 ),
                               ),
                             ],
@@ -87,21 +87,15 @@ class butler_screen extends StatelessWidget {
                         ],
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 20),
-                      child: Container(
-                        height: 130,
-                        width: 130,
-                        child: Image.asset("assets/catag/butler1.jpg"),
-                      ),
+                    Container(
+                      height: 125,
+                      width: 125,
+                      child: Image.asset("assets/catag/butler1.jpg"),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 10),
-                      child: Icon(
-                        Icons.chevron_right_outlined,
-                        size: 30,
-                        color: Tcolor,
-                      ),
+                    Icon(
+                      Icons.chevron_right_outlined,
+                      size: 30,
+                      color: Tcolor,
                     )
                   ],
                 ),
@@ -110,7 +104,7 @@ class butler_screen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: Container(
-                height: 185,
+                height: 165,
                 decoration: BoxDecoration(
                   color: Color.fromARGB(207, 255, 249, 249),
                   borderRadius: BorderRadius.circular(10),
@@ -126,32 +120,32 @@ class butler_screen extends StatelessWidget {
                 child: Row(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(left: 20, bottom: 10),
+                      padding: const EdgeInsets.only(left: 15, bottom: 5),
                       child: Row(
                         children: [
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Padding(
                                 padding:
-                                    const EdgeInsets.only(top: 20, bottom: 10),
+                                    const EdgeInsets.only(top: 10, bottom: 10),
                                 child: Text(
                                   "Buy something",
                                   style: TextStyle(
                                       color: Tcolor,
                                       fontSize: 20,
-                                      fontWeight: FontWeight.bold),
+                                      fontWeight: FontWeight.w500),
                                 ),
                               ),
                               Container(
-                                width: 180,
+                                width: 160,
                                 child: Text(
                                   "Didn't find what you were looking for at our stores? Our butlers can buy whatever you need from your store of choice.",
                                   overflow: TextOverflow.fade,
                                   style: TextStyle(
                                       color: Color.fromARGB(221, 65, 63, 63),
-                                      fontSize: 17),
+                                      fontSize: 15),
                                 ),
                               ),
                             ],
@@ -159,21 +153,15 @@ class butler_screen extends StatelessWidget {
                         ],
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 5),
-                      child: Container(
-                        height: 130,
-                        width: 130,
-                        child: Image.asset("assets/catag/butler2.jpg"),
-                      ),
+                    Container(
+                      height: 125,
+                      width: 125,
+                      child: Image.asset("assets/catag/butler2.jpg"),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 5),
-                      child: Icon(
-                        Icons.chevron_right_outlined,
-                        size: 30,
-                        color: Tcolor,
-                      ),
+                    Icon(
+                      Icons.chevron_right_outlined,
+                      size: 30,
+                      color: Tcolor,
                     )
                   ],
                 ),
