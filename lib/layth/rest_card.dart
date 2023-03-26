@@ -32,12 +32,10 @@ class rest_card extends StatelessWidget {
       child: Stack(
         children: [
           Container(
-            height: 260,
-            width: 370,
-            color: Colors.white,
+            height: 240,
           ),
           Container(
-            height: 180,
+            height: 170,
             width: 370,
             child: Image.asset(
               img,
@@ -57,7 +55,7 @@ class rest_card extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: 50,
+            bottom: 60,
             right: 15,
             child: Container(
               width: 90,
@@ -78,12 +76,12 @@ class rest_card extends StatelessWidget {
           ),
           Positioned(
               right: 30,
-              bottom: 70,
+              bottom: 80,
               child: Text(
                 diliver,
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               )),
-          Positioned(right: 42, bottom: 55, child: Text("mins")),
+          Positioned(right: 42, bottom: 65, child: Text("mins")),
           Positioned(
               left: 5,
               bottom: 48,
@@ -98,7 +96,7 @@ class rest_card extends StatelessWidget {
             left: 5,
             child: Container(
               height: 25,
-              width: 60,
+              width: 55,
               decoration: BoxDecoration(
                   color: Color.fromARGB(20, 0, 0, 0),
                   borderRadius: BorderRadius.circular(7)),
@@ -123,9 +121,9 @@ class rest_card extends StatelessWidget {
             left: 80,
             child: Container(
               height: 25,
-              width: 120,
+              width: 110,
               decoration: BoxDecoration(
-                  color: Color.fromARGB(57, 77, 113, 230),
+                  color: Color.fromARGB(26, 77, 113, 230),
                   borderRadius: BorderRadius.circular(7)),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -138,7 +136,7 @@ class rest_card extends StatelessWidget {
                   Text(
                     "Earn Points",
                     style: TextStyle(
-                      fontWeight: FontWeight.w600,
+                      fontWeight: FontWeight.normal,
                       fontSize: 14,
                       color: Colors.blue,
                     ),

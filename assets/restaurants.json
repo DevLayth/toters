@@ -3,24 +3,24 @@
     "rname":"texas",
     "rimg":"assets/rest/texas.png",
     "rtype":"Food",
-    "rdesc":"$$$ Fast Food",
+    "rdesc":"texas Fast Food hot and spicy",
     "rdliver":25,
     "rate":3.5,
     "rmenu":[
     {
-        "fid":0,"fname":"pizza","fprice":8000  ,"img":"assets/food/2.png" ,"desc":"" 
+        "fid":0,"fname":"meat pizza","fprice":8000  ,"img":"assets/food/istockphoto-139892156-612x612.jpg" ,"desc":"hot meat pizza" 
     },
     {
-        "fid":1,"fname":"pizza","fprice":8000  ,"img":"assets/food/2.png" ,"desc":"" 
+        "fid":1,"fname":"chesse pizza","fprice":8000  ,"img":"assets/food/wp8620067.jpg" ,"desc":"chesse pizza" 
     },
     {
-        "fid":2,"fname":"burger","fprice":4000 ,"img":"assets/food/2.png" ,"desc":"" 
+        "fid":2,"fname":"burger","fprice":4000 ,"img":"assets/food/wp4056225.jpg" ,"desc":"delicious hot burger" 
     },
     {
-        "fid":3,"fname":"falafel","fprice":2500 ,"img":"assets/food/2.png" ,"desc":"" 
+        "fid":3,"fname":"falafel","fprice":2500 ,"img":"assets/food/istockphoto-1315120814-612x612.jpg" ,"desc":"texsas falafl" 
     },
     {
-        "fid":4,"fname":"cryspy","fprice":3500 ,"img":"assets/food/2.png"  ,"desc":"" 
+        "fid":4,"fname":"cryspy","fprice":3500 ,"img":"assets/food/fried-chicken-wings-with-red-pepper-wallpaper-1600x900_47.jpg"  ,"desc":"fire cryspy" 
     }
 ]
 },
@@ -29,21 +29,21 @@
     "rname":"ofelia",
     "rimg":"assets/rest/ofelia.png",
     "rtype":"Food",
-    "rdesc":"$$ Fast Food",
+    "rdesc":"Best place for good food with family",
     "rdliver":15,
     "rate":4.1,
     "rmenu":[
     {
-        "fid":0,"fname":"cryspy","fprice":3500 ,"img":"assets/food/2.png" ,"desc":"" 
+        "fid":0,"fname":"shawrma","fprice":3500 ,"img":"assets/food/195461632-turkish-shawarma-with-beef-and-salsa-sauce-in-pita-bread-on-table.webp" ,"desc":"meat shawrma" 
     },
     {
-        "fid":1,"fname":"pizza","fprice":8000 ,"img":"assets/food/2.png"  ,"desc":""  
+        "fid":1,"fname":"pizza","fprice":8000 ,"img":"assets/food/download.jpg"  ,"desc":"spical pitzza"  
     },
     {
-        "fid":2,"fname":"burger","fprice":4500 ,"img":"assets/food/2.png" ,"desc":""  
+        "fid":2,"fname":"burger","fprice":4500 ,"img":"assets/food/583648-burger-4k-wallpaper.jpg" ,"desc":"yummy burger"  
     },
     {
-        "fid":3,"fname":"falafel","fprice":2500 ,"img":"assets/food/2.png" ,"desc":"" 
+        "fid":3,"fname":"taco","fprice":2500 ,"img":"assets/food/images.jpg" ,"desc":"hot and spicy" 
     }
     
 ]
@@ -53,21 +53,21 @@
     "rname":"Shaghaf - Duhok",
     "rimg":"assets/rest/shaghaf.jpg",
     "rtype":"Drinks",
-    "rdesc":"$$$ Coffee",
+    "rdesc":"best Coffee",
     "rdliver":18,
     "rate":4.5,
     "rmenu":[
         {
-            "fid":0,"fname":"cryspy","fprice":3500 ,"img":"assets/food/2.png" ,"desc":"" 
+            "fid":0,"fname":"coffe","fprice":2000 ,"img":"assets/food/coffe.jpg" ,"desc":"best coffe" 
         },
         {
-            "fid":1,"fname":"pizza","fprice":8000 ,"img":"assets/food/2.png"  ,"desc":""  
+            "fid":1,"fname":"cappuccino","fprice":3000 ,"img":"assets/food/img1.jpg"  ,"desc":"sweat cappuccino"  
         },
         {
-            "fid":2,"fname":"burger","fprice":4500 ,"img":"assets/food/2.png" ,"desc":""  
+            "fid":2,"fname":"juice","fprice":2500 ,"img":"assets/food/istockphoto-487402642-170667a.jpg" ,"desc":"fresh fruit juice"  
         },
         {
-            "fid":3,"fname":"falafel","fprice":2500 ,"img":"assets/food/2.png" ,"desc":"" 
+            "fid":3,"fname":"water","fprice":1000 ,"img":"assets/food/1c5cd8864f38f58ec77044b9a96b4bcc.jpg" ,"desc":"fresh water" 
         }
         
     ]
@@ -77,21 +77,21 @@
     "rname":"Eat&Go",
     "rimg":"assets/rest/eat_go.jpg",
     "rtype":"Food",
-    "rdesc":"$ Fast Food",
+    "rdesc":"fast and great food",
     "rdliver":19,
     "rate":4.8,
     "rmenu":[
         {
-            "fid":0,"fname":"cryspy","fprice":3500 ,"img":"assets/food/2.png" ,"desc":"" 
+            "fid":0,"fname":"shawrma","fprice":1500 ,"img":"assets/food/eat and go1.jpg" ,"desc":"hot and spicy shawrma" 
         },
         {
-            "fid":1,"fname":"pizza","fprice":8000 ,"img":"assets/food/2.png"  ,"desc":""  
+            "fid":1,"fname":"wajba falafl","fprice":3000 ,"img":"assets/food/eat and go 2.jpg"  ,"desc":"our falafl is best"  
         },
         {
-            "fid":2,"fname":"burger","fprice":4500 ,"img":"assets/food/2.png" ,"desc":""  
+            "fid":2,"fname":"saj","fprice":4500 ,"img":"assets/food/eat and go3.jpg" ,"desc":"our spical meal"  
         },
         {
-            "fid":3,"fname":"falafel","fprice":2500 ,"img":"assets/food/2.png" ,"desc":"" 
+            "fid":3,"fname":"wings","fprice":2500 ,"img":"assets/food/eat and go 4.jpg" ,"desc":"spicy wings" 
         }
         
     ]
@@ -131,7 +131,7 @@
             "fid":7,"fname":"Pomegranate","fprice":2000 ,"img":"assets/food/ojpomegranate.jpg" ,"desc":"Juice" 
         },
         {
-            "fid":3,"fname":"Swiss","fprice":2000 ,"img":"assets/food/ojswiss.jpg" ,"desc":"" 
+            "fid":8,"fname":"Swiss","fprice":2000 ,"img":"assets/food/ojswiss.jpg" ,"desc":"Juice" 
         }
         
     ]

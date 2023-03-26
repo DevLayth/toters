@@ -29,7 +29,7 @@ class catg_screen extends StatelessWidget {
           ),
         ),
         body: Container(
-          height: 710,
+          height: MediaQuery.of(context).size.height - 155,
           child: FutureBuilder<List<Restaurant>>(
             future: fetchRestaurants(),
             builder: (context, snapshot) {
