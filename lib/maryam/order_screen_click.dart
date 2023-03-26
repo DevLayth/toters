@@ -14,33 +14,31 @@ class order_screen_click extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.white,
-          leading: IconButton(
-            icon: Icon(
-              Icons.arrow_back,
-              color: Colors.black,
-            ),
-            onPressed: () {
-              Navigator.pop(context);
-            },
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        leading: IconButton(
+          icon: Icon(
+            Icons.arrow_back,
+            color: Colors.black,
           ),
+          onPressed: () {
+            Navigator.pop(context);
+          },
         ),
-        body: ListView(
-          children: [
-            order_card_clicked(
-                name: orderlist[id].name,
-                img: orderlist[id].img,
-                date: orderlist[id].date,
-                id: id),
-            total_of_order(
-              sub: orderlist[id].total.toInt(),
-              df: orderlist[id].df,
-            )
-          ],
-        ),
+      ),
+      body: ListView(
+        children: [
+          order_card_clicked(
+              name: orderlist[id].name,
+              img: orderlist[id].img,
+              date: orderlist[id].date,
+              id: id),
+          total_of_order(
+            sub: orderlist[id].total.toInt(),
+            df: orderlist[id].df,
+          )
+        ],
       ),
     );
   }
