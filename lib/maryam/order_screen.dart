@@ -34,7 +34,9 @@ class order_screen extends StatelessWidget {
                 ),
               ),
             ),
-            Container(height: 680, child: card_list())
+            Container(
+                height: MediaQuery.of(context).size.height - 200,
+                child: card_list())
           ],
         ),
       ),
