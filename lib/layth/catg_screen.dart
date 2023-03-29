@@ -46,10 +46,7 @@ class catg_screen extends StatelessWidget {
 
                     return Padding(
                       padding: const EdgeInsets.only(
-                        right: 20,
-                        left: 15,
-                        top: 20,
-                      ),
+                          right: 20, left: 15, top: 20, bottom: 10),
                       child: Container(
                         width: 340,
                         height: 260,
