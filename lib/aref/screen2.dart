@@ -24,7 +24,6 @@ class Foodpage extends StatelessWidget {
             final restaurants = snapshot.data!.toList();
 
             return Container(
-              height: 750,
               child: ListView(
                 children: [
                   resturant_card(
