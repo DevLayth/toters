@@ -16,29 +16,26 @@ class acoount_screen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-          appBar: AppBar(
-            backgroundColor: Colors.white,
-            title: Text(
-              "ِAccount Name",
-              style: TextStyle(color: Colors.black),
-            ),
+    return Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.white,
+          title: Text(
+            "ِAccount Name",
+            style: TextStyle(color: Colors.black),
           ),
-          body: ListView(
-            children: [
-              green_pts_card(),
-              acc_list1(),
-              acc_list2(),
-              acc_list3(),
-              acc_list4(),
-              acc_list5(),
-              Container(
-                height: 60,
-              )
-            ],
-          )),
-    );
+        ),
+        body: ListView(
+          children: [
+            green_pts_card(),
+            acc_list1(),
+            acc_list2(),
+            acc_list3(),
+            acc_list4(),
+            acc_list5(),
+            Container(
+              height: 60,
+            )
+          ],
+        ));
   }
 }

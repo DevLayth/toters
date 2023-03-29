@@ -12,34 +12,31 @@ class order_screen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.white,
-          title: Text(
-            " Orders",
-            style: TextStyle(color: Colors.black),
-          ),
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        title: Text(
+          " Orders",
+          style: TextStyle(color: Colors.black),
         ),
-        body: ListView(
-          children: [
-            Container(
-              height: 50,
-              color: Colors.white,
-              child: Padding(
-                padding: const EdgeInsets.all(15.0),
-                child: Text(
-                  "Past Orders",
-                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-                ),
+      ),
+      body: ListView(
+        children: [
+          Container(
+            height: 50,
+            color: Colors.white,
+            child: Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Text(
+                "Past Orders",
+                style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
               ),
             ),
-            Container(
-                height: MediaQuery.of(context).size.height - 200,
-                child: card_list())
-          ],
-        ),
+          ),
+          Container(
+              height: MediaQuery.of(context).size.height - 200,
+              child: card_list())
+        ],
       ),
     );
   }

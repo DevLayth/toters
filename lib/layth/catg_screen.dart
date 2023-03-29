@@ -10,87 +10,72 @@ class catg_screen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.white,
-          title: Text(
-            Tit,
-            style: TextStyle(color: Colors.black),
-          ),
-          leading: IconButton(
-            icon: Icon(
-              Icons.arrow_back,
-              color: Colors.black,
-            ),
-            onPressed: () {
-              Navigator.pop(context);
-            },
-          ),
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        title: Text(
+          Tit,
+          style: TextStyle(color: Colors.black),
         ),
-        body: Container(
-          height: MediaQuery.of(context).size.height - 155,
-          child: FutureBuilder<List<Restaurant>>(
-            future: fetchRestaurants(),
-            builder: (context, snapshot) {
-              if (snapshot.hasData) {
-                final restaurants = snapshot.data!
-                    .where((restaurant) => restaurant.type == Tit)
-                    .toList();
-                return Container(
-                  color: Colors.white,
-                  child: ListView.builder(
-                    scrollDirection: Axis.vertical,
-                    itemCount: restaurants.length,
-                    itemBuilder: (context, index) {
-                      final restaurant = restaurants[index];
-
-                      return Padding(
-                        padding: const EdgeInsets.only(
-                          right: 20,
-                          left: 15,
-                          top: 20,
-                        ),
-                        child: Container(
-                          width: 340,
-                          height: 260,
-                          color: Colors.white,
-                          child: rest_card(
-                              id: restaurant.id,
-                              img: restaurant.image,
-                              name: restaurant.name,
-                              desc: restaurant.desc,
-                              rate: restaurant.rate,
-                              diliver: restaurant.diliver.toString() +
-                                  " - " +
-                                  (restaurant.diliver + 10).toString()),
-                        ),
-                      );
-                    },
-                  ),
-                );
-              } else if (snapshot.hasError) {
-                return Center(child: Text('${snapshot.error}'));
-              } else {
-                return Center(child: CircularProgressIndicator());
-              }
-            },
+        leading: IconButton(
+          icon: Icon(
+            Icons.arrow_back,
+            color: Colors.black,
           ),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+      ),
+      body: Container(
+        height: MediaQuery.of(context).size.height,
+        child: FutureBuilder<List<Restaurant>>(
+          future: fetchRestaurants(),
+          builder: (context, snapshot) {
+            if (snapshot.hasData) {
+              final restaurants = snapshot.data!
+                  .where((restaurant) => restaurant.type == Tit)
+                  .toList();
+              return Container(
+                color: Colors.white,
+                child: ListView.builder(
+                  scrollDirection: Axis.vertical,
+                  itemCount: restaurants.length,
+                  itemBuilder: (context, index) {
+                    final restaurant = restaurants[index];
+
+                    return Padding(
+                      padding: const EdgeInsets.only(
+                        right: 20,
+                        left: 15,
+                        top: 20,
+                      ),
+                      child: Container(
+                        width: 340,
+                        height: 260,
+                        color: Colors.white,
+                        child: rest_card(
+                            id: restaurant.id,
+                            img: restaurant.image,
+                            name: restaurant.name,
+                            desc: restaurant.desc,
+                            rate: restaurant.rate,
+                            diliver: restaurant.diliver.toString() +
+                                " - " +
+                                (restaurant.diliver + 10).toString()),
+                      ),
+                    );
+                  },
+                ),
+              );
+            } else if (snapshot.hasError) {
+              return Center(child: Text('${snapshot.error}'));
+            } else {
+              return Center(child: CircularProgressIndicator());
+            }
+          },
         ),
       ),
     );
   }
 }
-/*
-return Padding(
-                          padding: const EdgeInsets.only(bottom: 10),
-                          child: rest_card(
-                            img: r_data[index].img!,
-                            name: r_data[index].name!,
-                            diliver: r_data[index].dliver!,
-                            desc: r_data[index].desc!,
-                          ),
-                        );
-                      }
-*/
